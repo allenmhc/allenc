@@ -1,4 +1,3 @@
-allenc
-======
+# allenc
 
-Wordpress theme
+Wordpress theme by @allenmhc
