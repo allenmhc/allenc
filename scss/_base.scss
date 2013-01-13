@@ -1,0 +1,19 @@
+// Base styles.
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/proximanova-regular.eot");
+  src: local("â˜º");
+  src: url("../fonts/proximanova-regular.woff") format("woff");
+  src: url("../fonts/proximanova-regular.ttf") format("truetype");
+  src: url("../fonts/proximanova-regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Proxima Nova", "PT Sans", "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+  background: url(../images/bg-bokeh.jpg) no-repeat fixed center center;
+}

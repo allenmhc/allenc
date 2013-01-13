@@ -1,0 +1,23 @@
+.post {
+  width: 800px;
+  padding: 10px 20px;
+  margin: 10px auto;
+  position: relative;
+  @include border-radius(5px);
+  color: #111111;
+  @include text-shadow(0 -1px rgba(255, 255, 255, 0.1));
+  &:after {
+    content: "";
+    background-repeat: repeat;
+    @include retina-background-image("bg-carbonfiber", "png");
+    //background-color: rgba(0, 0, 0, 0.15)
+    @include opacity(0.9);
+    @include border-radius(5px);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}

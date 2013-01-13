@@ -1,16 +1,11 @@
-/* Theme Name: allenc
- * Theme URI: http://allenc.com
- * Description: Custom theme for allenc.com
- * Author: Allen Cheung
- * Version: 1.0
- *
- * This is the allenc 1.0 theme. */
-/* normalize.css v1.0.2 | MIT License | git.io/normalize */
+/*! normalize.css v1.0.2 | MIT License | git.io/normalize */
+
 /* ==========================================================================
  * HTML5 display definitions
  * ========================================================================== */
+
 /* Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3. */
-/* line 19, ../scss/_normalize.scss */
+
 article,
 aside,
 details,
@@ -26,7 +21,7 @@ summary {
 }
 
 /* Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3. */
-/* line 27, ../scss/_normalize.scss */
+
 audio,
 canvas,
 video {
@@ -37,7 +32,7 @@ video {
 
 /* Prevents modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices. */
-/* line 36, ../scss/_normalize.scss */
+
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -46,7 +41,7 @@ audio:not([controls]) {
 /* Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
  * and Safari 4.
  * Known issue: no IE 6 support. */
-/* line 45, ../scss/_normalize.scss */
+
 [hidden] {
   display: none;
 }
@@ -54,11 +49,12 @@ audio:not([controls]) {
 /* ==========================================================================
  * Base
  * ========================================================================== */
+
 /* 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *    `em` units.
  * 2. Prevents iOS text size adjust after orientation change, without disabling
  *    user zoom. */
-/* line 58, ../scss/_normalize.scss */
+
 html {
   font-size: 100%;
   /* 1 */
@@ -70,7 +66,7 @@ html {
 
 /* Addresses `font-family` inconsistency between `textarea` and other form
  * elements. */
-/* line 74, ../scss/_normalize.scss */
+
 html,
 button,
 input,
@@ -80,7 +76,7 @@ textarea {
 }
 
 /* Addresses margins handled incorrectly in IE 6/7. */
-/* line 80, ../scss/_normalize.scss */
+
 body {
   margin: 0;
 }
@@ -88,14 +84,15 @@ body {
 /* ==========================================================================
  * Links
  * ========================================================================== */
+
 /* Addresses `outline` inconsistency between Chrome and other browsers. */
-/* line 90, ../scss/_normalize.scss */
+
 a:focus {
   outline: thin dotted;
 }
 
 /* Improves readability when focused and also mouse hovered in all browsers. */
-/* line 97, ../scss/_normalize.scss */
+
 a:active,
 a:hover {
   outline: 0;
@@ -104,85 +101,80 @@ a:hover {
 /* ==========================================================================
  * Typography
  * ========================================================================== */
+
 /* Addresses font sizes and margins set differently in IE 6/7.
  * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
  * and Chrome. */
-/* line 109, ../scss/_normalize.scss */
+
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 114, ../scss/_normalize.scss */
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0;
 }
 
-/* line 119, ../scss/_normalize.scss */
 h3 {
   font-size: 1.17em;
   margin: 1em 0;
 }
 
-/* line 124, ../scss/_normalize.scss */
 h4 {
   font-size: 1em;
   margin: 1.33em 0;
 }
 
-/* line 129, ../scss/_normalize.scss */
 h5 {
   font-size: 0.83em;
   margin: 1.67em 0;
 }
 
-/* line 134, ../scss/_normalize.scss */
 h6 {
   font-size: 0.67em;
   margin: 2.33em 0;
 }
 
 /* Addresses styling not present in IE 7/8/9, Safari 5, and Chrome. */
-/* line 141, ../scss/_normalize.scss */
+
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
 /* Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome. */
-/* line 148, ../scss/_normalize.scss */
+
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 152, ../scss/_normalize.scss */
 blockquote {
   margin: 1em 40px;
 }
 
 /* Addresses styling not present in Safari 5 and Chrome. */
-/* line 158, ../scss/_normalize.scss */
+
 dfn {
   font-style: italic;
 }
 
 /* Addresses styling not present in IE 6/7/8/9. */
-/* line 164, ../scss/_normalize.scss */
+
 mark {
   background: yellow;
   color: black;
 }
 
 /* Addresses margins set differently in IE 6/7. */
-/* line 172, ../scss/_normalize.scss */
+
 p,
 pre {
   margin: 1em 0;
 }
 
 /* Corrects font family set oddly in IE 6, Safari 4/5, and Chrome. */
-/* line 181, ../scss/_normalize.scss */
+
 code,
 kbd,
 pre,
@@ -193,7 +185,7 @@ samp {
 }
 
 /* Improves readability of pre-formatted text in all browsers. */
-/* line 189, ../scss/_normalize.scss */
+
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -201,13 +193,13 @@ pre {
 }
 
 /* Addresses CSS quotes not supported in IE 6/7. */
-/* line 197, ../scss/_normalize.scss */
+
 q {
   quotes: none;
 }
 
 /* Addresses `quotes` property not supported in Safari 4. */
-/* line 204, ../scss/_normalize.scss */
+
 q:before,
 q:after {
   content: "";
@@ -215,13 +207,13 @@ q:after {
 }
 
 /* Addresses inconsistent and variable font size in all browsers. */
-/* line 211, ../scss/_normalize.scss */
+
 small {
   font-size: 80%;
 }
 
 /* Prevents `sub` and `sup` affecting `line-height` in all browsers. */
-/* line 218, ../scss/_normalize.scss */
+
 sub,
 sup {
   font-size: 75%;
@@ -230,12 +222,10 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 225, ../scss/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 229, ../scss/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -243,8 +233,9 @@ sub {
 /* ==========================================================================
  * Lists
  * ========================================================================== */
+
 /* Addresses margins set differently in IE 6/7. */
-/* line 242, ../scss/_normalize.scss */
+
 dl,
 menu,
 ol,
@@ -252,13 +243,12 @@ ul {
   margin: 1em 0;
 }
 
-/* line 246, ../scss/_normalize.scss */
 dd {
   margin: 0 0 0 40px;
 }
 
 /* Addresses paddings set differently in IE 6/7. */
-/* line 254, ../scss/_normalize.scss */
+
 menu,
 ol,
 ul {
@@ -266,7 +256,7 @@ ul {
 }
 
 /* Corrects list images handled incorrectly in IE 7. */
-/* line 261, ../scss/_normalize.scss */
+
 nav ul,
 nav ol {
   list-style: none;
@@ -276,9 +266,10 @@ nav ol {
 /* ==========================================================================
  * Embedded content
  * ========================================================================== */
+
 /* 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improves image quality when scaled in IE 7. */
-/* line 273, ../scss/_normalize.scss */
+
 img {
   border: 0;
   /* 1 */
@@ -287,7 +278,7 @@ img {
 }
 
 /* Corrects overflow displayed oddly in IE 9. */
-/* line 282, ../scss/_normalize.scss */
+
 svg:not(:root) {
   overflow: hidden;
 }
@@ -295,8 +286,9 @@ svg:not(:root) {
 /* ==========================================================================
  * Figures
  * ========================================================================== */
+
 /* Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11. */
-/* line 292, ../scss/_normalize.scss */
+
 figure {
   margin: 0;
 }
@@ -304,14 +296,15 @@ figure {
 /* ==========================================================================
  * Forms
  * ========================================================================== */
+
 /* Corrects margin displayed oddly in IE 6/7. */
-/* line 302, ../scss/_normalize.scss */
+
 form {
   margin: 0;
 }
 
 /* Define consistent border, margin, and padding. */
-/* line 308, ../scss/_normalize.scss */
+
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
@@ -321,7 +314,7 @@ fieldset {
 /* 1. Corrects color not being inherited in IE 6/7/8/9.
  * 2. Corrects text not wrapping in Firefox 3.
  * 3. Corrects alignment displayed oddly in IE 6/7. */
-/* line 318, ../scss/_normalize.scss */
+
 legend {
   border: 0;
   /* 1 */
@@ -336,7 +329,7 @@ legend {
  * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
  *    and Chrome.
  * 3. Improves appearance and consistency in all browsers. */
-/* line 336, ../scss/_normalize.scss */
+
 button,
 input,
 select,
@@ -353,7 +346,7 @@ textarea {
 
 /* Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet. */
-/* line 351, ../scss/_normalize.scss */
+
 button,
 input {
   line-height: normal;
@@ -366,7 +359,7 @@ input {
  *    `input` and others.
  * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6. */
-/* line 366, ../scss/_normalize.scss */
+
 button,
 html input[type="button"],
 input[type="reset"],
@@ -380,7 +373,7 @@ input[type="submit"] {
 }
 
 /* Re-set default cursor for disabled elements. */
-/* line 378, ../scss/_normalize.scss */
+
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -390,7 +383,7 @@ input[disabled] {
  * 2. Removes excess padding in IE 8/9.
  * 3. Removes excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6. */
-/* line 388, ../scss/_normalize.scss */
+
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -406,7 +399,7 @@ input[type="radio"] {
 /* 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof). */
-/* line 403, ../scss/_normalize.scss */
+
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -418,14 +411,14 @@ input[type="search"] {
 
 /* Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X. */
-/* line 416, ../scss/_normalize.scss */
+
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 /* Removes inner padding and border in Firefox 3+. */
-/* line 423, ../scss/_normalize.scss */
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -434,7 +427,7 @@ input::-moz-focus-inner {
 
 /* 1. Removes default vertical scrollbar in IE 6/7/8/9.
  * 2. Improves readability and alignment in all browsers. */
-/* line 431, ../scss/_normalize.scss */
+
 textarea {
   overflow: auto;
   /* 1 */
@@ -445,68 +438,10 @@ textarea {
 /* ==========================================================================
  * Tables
  * ========================================================================== */
+
 /* Remove most spacing between table cells. */
-/* line 444, ../scss/_normalize.scss */
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("../fonts/proximanova-regular.eot");
-  src: local("â˜º");
-  src: url("../fonts/proximanova-regular.woff") format("woff");
-  src: url("../fonts/proximanova-regular.ttf") format("truetype");
-  src: url("../fonts/proximanova-regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* line 14, ../scss/_base.scss */
-body {
-  font-size: 16px;
-  font-weight: normal;
-  font-family: "Proxima Nova", "PT Sans", "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
-  background: url(../images/bg-bokeh.jpg) no-repeat fixed center center;
-}
-
-/* line 1, ../scss/_post.scss */
-.post {
-  width: 800px;
-  padding: 10px 20px;
-  margin: 10px auto;
-  position: relative;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  color: #111111;
-  text-shadow: 0 -1px rgba(255, 255, 255, 0.1);
-}
-/* line 9, ../scss/_post.scss */
-.post:after {
-  content: "";
-  background-repeat: repeat;
-  background-image: url(../images/bg-carbonfiber.png);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-  opacity: 0.9;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-  /* line 9, ../scss/_post.scss */
-  .post:after {
-    background-image: url(../images/bg-carbonfiber@2x.png);
-  }
 }
