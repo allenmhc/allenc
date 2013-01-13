@@ -478,3 +478,33 @@ body {
     background-image: url(../images/bg-grey@2x.png);
   }
 }
+
+/* line 1, sass/_post.sass */
+.post {
+  width: 800px;
+  padding: 10px 20px;
+  margin: 10px auto;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 8, sass/_post.sass */
+.post:after {
+  content: "";
+  background-repeat: repeat;
+  background-color: rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

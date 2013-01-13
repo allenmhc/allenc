@@ -12,9 +12,11 @@ global $wp_query;
   <?php
   while (have_posts()) {
     the_post();
-    the_content();
-  }
   ?>
+  <section class="post">
+  <?php the_content(); ?>
+  </section>
+  <?php } ?>
 </div>
 
 <div id="beta">
