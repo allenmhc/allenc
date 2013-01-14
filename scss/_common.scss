@@ -1,0 +1,59 @@
+// Common class styles.
+
+.title-separator {
+  display: inline-block;
+  width: 1px;
+  position: relative;
+}
+
+// Spine styles.
+$spine-marker-height: 13px;
+$spine-padding: 20px;
+.spine-left {
+  border-left: 1px solid white(0.6);
+}
+
+.spine-spacer {
+  width: 100%;
+  height: $spine-marker-height;
+}
+
+.spine-section {
+}
+
+.spine-content {
+  padding-top: $spine-marker-height;
+  padding-left: $spine-padding;
+}
+
+.spine-title {
+  position: relative;
+  padding-left: $spine-padding;
+  &:before, &:after {
+    position: absolute;
+    height: 4px;
+    left: 0;
+    border-left: 1px solid white(0.6);
+    content: "";
+    display: block;
+  }
+  &:before {
+    top: 0;
+    height: 5px;
+  }
+  &:after { top: $spine-marker-height + 5px; }
+
+  .spine-marker {
+    box-sizing: border-box;
+    position: absolute;
+    top: 5px;
+    left: -6px;
+    width: $spine-marker-height;
+    height: $spine-marker-height;
+    border: 2px solid white(0.6);
+    @include border-radius(floor($spine-marker-height / 2));
+    content: "";
+    display: block;
+    @include box-shadow(0 0 10px white(0.8));
+  }
+}

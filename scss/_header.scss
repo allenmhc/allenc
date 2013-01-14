@@ -9,16 +9,15 @@
 }
 
 #site-title {
-  font-family: "Lato", Arial, sans-serif;
-  font-size: 24px;
+  font-family: $font-titles;
   @include text-shadow(0 1px white(0.3));
   text-transform: uppercase;
-  padding: 10px;
+  padding: 5px 0;
 
 
   .name, .description {
-    font-size: 24px;
-    letter-spacing: 4px;
+    font-size: 28px;
+    letter-spacing: 5px;
     margin: 0;
     padding: 0;
     display: inline-block;
@@ -33,10 +32,7 @@
   }
 
   .title-separator {
-    display: inline-block;
-    width: 1px;
-    height: 20px;
-    position: relative;
+    height: 24px;
     top: 2px;
     @include background(linear-gradient(
       rgba($color-sec, 0) 0%,

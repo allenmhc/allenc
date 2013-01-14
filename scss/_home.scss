@@ -1,0 +1,66 @@
+#home {
+  height: 1000px;
+
+  h3 {
+    color: white(0.5);
+    @include letterpress(0.3);
+    font-family: $font-titles;
+    display: inline-block;
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-variant: small-caps;
+    font-weight: 300;
+  }
+
+  .title-separator {
+    height: 15px;
+    top: 1px;
+    margin: 0 5px;
+    @include background(linear-gradient(
+      rgba($color-ter, 0) 0%,
+      rgba($color-ter, 0.7) 20%,
+      rgba($color-ter, 0.7) 80%,
+      rgba($color-ter, 0) 100%))
+  }
+
+  .section-title-animated {
+    position: relative;
+    display: block;
+    float: left;
+
+    .title-separator, .title-additional {
+      @include transition-property(opacity left top);
+      @include transition-duration(0.3s, 0.3s, 0.3s);
+      @include transition-timing-function(linear, linear, linear);
+      @include opacity(0);
+      position: absolute;
+    }
+    .title-separator {
+      top: 20px;
+    }
+    .title-additional {
+      padding-left: 20px;
+      left: 80px;
+    }
+  }
+
+  .section-title {
+    @include clearfix();
+    cursor: pointer;
+    display: block;
+
+    .title-main {
+      float: left;
+      display: block;
+      padding-right: 10px;
+    }
+
+    &:hover .section-title-animated {
+      .title-separator, .title-additional {
+        @include opacity(1);
+      }
+      .title-separator { top: 5px; }
+      .title-additional { left: 0; }
+    }
+  }
+}

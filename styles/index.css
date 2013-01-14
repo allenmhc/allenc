@@ -471,6 +471,80 @@ body {
   background: url(../images/bg-bokeh.jpg) no-repeat fixed center center;
 }
 
+/* line 21, ../scss/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 3, ../scss/_common.scss */
+.title-separator {
+  display: inline-block;
+  width: 1px;
+  position: relative;
+}
+
+/* line 12, ../scss/_common.scss */
+.spine-left {
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* line 16, ../scss/_common.scss */
+.spine-spacer {
+  width: 100%;
+  height: 13px;
+}
+
+/* line 24, ../scss/_common.scss */
+.spine-content {
+  padding-top: 13px;
+  padding-left: 20px;
+}
+
+/* line 29, ../scss/_common.scss */
+.spine-title {
+  position: relative;
+  padding-left: 20px;
+}
+/* line 32, ../scss/_common.scss */
+.spine-title:before, .spine-title:after {
+  position: absolute;
+  height: 4px;
+  left: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
+  content: "";
+  display: block;
+}
+/* line 40, ../scss/_common.scss */
+.spine-title:before {
+  top: 0;
+  height: 5px;
+}
+/* line 44, ../scss/_common.scss */
+.spine-title:after {
+  top: 18px;
+}
+/* line 46, ../scss/_common.scss */
+.spine-title .spine-marker {
+  box-sizing: border-box;
+  position: absolute;
+  top: 5px;
+  left: -6px;
+  width: 13px;
+  height: 13px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  content: "";
+  display: block;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  -moz-box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
 /* line 6, ../scss/_layout.scss */
 #site-header {
   width: 100%;
@@ -490,7 +564,7 @@ body {
 /* line 20, ../scss/_layout.scss */
 #content {
   width: 960px;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
 /* line 3, ../scss/_header.scss */
@@ -530,39 +604,121 @@ body {
 /* line 11, ../scss/_header.scss */
 #site-title {
   font-family: "Lato", Arial, sans-serif;
-  font-size: 24px;
   text-shadow: 0 1px rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
-  padding: 10px;
+  padding: 5px 0;
 }
-/* line 19, ../scss/_header.scss */
+/* line 18, ../scss/_header.scss */
 #site-title .name, #site-title .description {
-  font-size: 24px;
-  letter-spacing: 4px;
+  font-size: 28px;
+  letter-spacing: 5px;
   margin: 0;
   padding: 0;
   display: inline-block;
 }
-/* line 26, ../scss/_header.scss */
+/* line 25, ../scss/_header.scss */
 #site-title .name {
   font-weight: 400;
   padding-right: 10px;
 }
-/* line 30, ../scss/_header.scss */
+/* line 29, ../scss/_header.scss */
 #site-title .description {
   font-weight: 300;
   padding-left: 10px;
 }
-/* line 35, ../scss/_header.scss */
+/* line 34, ../scss/_header.scss */
 #site-title .title-separator {
-  display: inline-block;
-  width: 1px;
-  height: 20px;
-  position: relative;
+  height: 24px;
   top: 2px;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(192, 173, 107, 0)), color-stop(20%, rgba(192, 173, 107, 0.7)), color-stop(80%, rgba(192, 173, 107, 0.7)), color-stop(100%, rgba(192, 173, 107, 0)));
   background: -webkit-linear-gradient(rgba(192, 173, 107, 0) 0%, rgba(192, 173, 107, 0.7) 20%, rgba(192, 173, 107, 0.7) 80%, rgba(192, 173, 107, 0) 100%);
   background: -moz-linear-gradient(rgba(192, 173, 107, 0) 0%, rgba(192, 173, 107, 0.7) 20%, rgba(192, 173, 107, 0.7) 80%, rgba(192, 173, 107, 0) 100%);
   background: -o-linear-gradient(rgba(192, 173, 107, 0) 0%, rgba(192, 173, 107, 0.7) 20%, rgba(192, 173, 107, 0.7) 80%, rgba(192, 173, 107, 0) 100%);
   background: linear-gradient(rgba(192, 173, 107, 0) 0%, rgba(192, 173, 107, 0.7) 20%, rgba(192, 173, 107, 0.7) 80%, rgba(192, 173, 107, 0) 100%);
+}
+
+/* line 1, ../scss/_home.scss */
+#home {
+  height: 1000px;
+}
+/* line 4, ../scss/_home.scss */
+#home h3 {
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  font-family: "Lato", Arial, sans-serif;
+  display: inline-block;
+  letter-spacing: 3px;
+  font-size: 18px;
+  font-variant: small-caps;
+  font-weight: 300;
+}
+/* line 15, ../scss/_home.scss */
+#home .title-separator {
+  height: 15px;
+  top: 1px;
+  margin: 0 5px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(173, 222, 204, 0)), color-stop(20%, rgba(173, 222, 204, 0.7)), color-stop(80%, rgba(173, 222, 204, 0.7)), color-stop(100%, rgba(173, 222, 204, 0)));
+  background: -webkit-linear-gradient(rgba(173, 222, 204, 0) 0%, rgba(173, 222, 204, 0.7) 20%, rgba(173, 222, 204, 0.7) 80%, rgba(173, 222, 204, 0) 100%);
+  background: -moz-linear-gradient(rgba(173, 222, 204, 0) 0%, rgba(173, 222, 204, 0.7) 20%, rgba(173, 222, 204, 0.7) 80%, rgba(173, 222, 204, 0) 100%);
+  background: -o-linear-gradient(rgba(173, 222, 204, 0) 0%, rgba(173, 222, 204, 0.7) 20%, rgba(173, 222, 204, 0.7) 80%, rgba(173, 222, 204, 0) 100%);
+  background: linear-gradient(rgba(173, 222, 204, 0) 0%, rgba(173, 222, 204, 0.7) 20%, rgba(173, 222, 204, 0.7) 80%, rgba(173, 222, 204, 0) 100%);
+}
+/* line 26, ../scss/_home.scss */
+#home .section-title-animated {
+  position: relative;
+  display: block;
+  float: left;
+}
+/* line 31, ../scss/_home.scss */
+#home .section-title-animated .title-separator, #home .section-title-animated .title-additional {
+  -webkit-transition-property: opacity, left, top;
+  -moz-transition-property: opacity, left, top;
+  -o-transition-property: opacity, left, top;
+  transition-property: opacity left top;
+  -webkit-transition-duration: 0.3s, 0.3s, 0.3s;
+  -moz-transition-duration: 0.3s, 0.3s, 0.3s;
+  -o-transition-duration: 0.3s, 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s, 0.3s;
+  -webkit-transition-timing-function: linear, linear, linear;
+  -moz-transition-timing-function: linear, linear, linear;
+  -o-transition-timing-function: linear, linear, linear;
+  transition-timing-function: linear, linear, linear;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  position: absolute;
+}
+/* line 38, ../scss/_home.scss */
+#home .section-title-animated .title-separator {
+  top: 20px;
+}
+/* line 41, ../scss/_home.scss */
+#home .section-title-animated .title-additional {
+  padding-left: 20px;
+  left: 80px;
+}
+/* line 47, ../scss/_home.scss */
+#home .section-title {
+  overflow: hidden;
+  *zoom: 1;
+  cursor: pointer;
+  display: block;
+}
+/* line 52, ../scss/_home.scss */
+#home .section-title .title-main {
+  float: left;
+  display: block;
+  padding-right: 10px;
+}
+/* line 59, ../scss/_home.scss */
+#home .section-title:hover .section-title-animated .title-separator, #home .section-title:hover .section-title-animated .title-additional {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 62, ../scss/_home.scss */
+#home .section-title:hover .section-title-animated .title-separator {
+  top: 5px;
+}
+/* line 63, ../scss/_home.scss */
+#home .section-title:hover .section-title-animated .title-additional {
+  left: 0;
 }
