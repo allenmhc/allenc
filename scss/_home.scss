@@ -5,13 +5,16 @@
 
   h3 {
     color: white(0.5);
-    @include letterpress(0.3);
+    @include letterpress(0.5);
     font-family: $font-titles;
     display: inline-block;
     letter-spacing: 3px;
     font-size: 18px;
     font-variant: small-caps;
     font-weight: 300;
+    &.title-additional {
+      @include letterpress(0.2);
+    }
   }
 
   .title-separator {

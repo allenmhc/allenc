@@ -683,7 +683,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 6, ../scss/_home.scss */
 #home h3 {
   color: rgba(255, 255, 255, 0.5);
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   font-family: "Lato", Arial, sans-serif;
   display: inline-block;
   letter-spacing: 3px;
@@ -691,20 +691,24 @@ h1, h2, h3, h4, h5, h6 {
   font-variant: small-caps;
   font-weight: 300;
 }
-/* line 17, ../scss/_home.scss */
+/* line 15, ../scss/_home.scss */
+#home h3.title-additional {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+/* line 20, ../scss/_home.scss */
 #home .title-separator {
   height: 15px;
   top: 1px;
   margin: 0 5px;
 }
 
-/* line 26, ../scss/_home.scss */
+/* line 29, ../scss/_home.scss */
 #home .section-title-animated {
   position: relative;
   display: block;
   float: left;
 }
-/* line 31, ../scss/_home.scss */
+/* line 34, ../scss/_home.scss */
 #home .section-title-animated .title-separator, #home .section-title-animated .title-additional {
   -webkit-transition-property: opacity, left, top;
   -moz-transition-property: opacity, left, top;
@@ -722,38 +726,38 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   position: absolute;
 }
-/* line 38, ../scss/_home.scss */
+/* line 41, ../scss/_home.scss */
 #home .section-title-animated .title-separator {
   top: 20px;
 }
-/* line 41, ../scss/_home.scss */
+/* line 44, ../scss/_home.scss */
 #home .section-title-animated .title-additional {
   padding-left: 20px;
   left: 80px;
 }
-/* line 47, ../scss/_home.scss */
+/* line 50, ../scss/_home.scss */
 #home .section-title {
   overflow: hidden;
   *zoom: 1;
   cursor: pointer;
   display: block;
 }
-/* line 52, ../scss/_home.scss */
+/* line 55, ../scss/_home.scss */
 #home .section-title .title-main {
   float: left;
   display: block;
   padding-right: 10px;
 }
-/* line 59, ../scss/_home.scss */
+/* line 62, ../scss/_home.scss */
 #home .section-title:hover .section-title-animated .title-separator, #home .section-title:hover .section-title-animated .title-additional {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 62, ../scss/_home.scss */
+/* line 65, ../scss/_home.scss */
 #home .section-title:hover .section-title-animated .title-separator {
   top: 5px;
 }
-/* line 63, ../scss/_home.scss */
+/* line 66, ../scss/_home.scss */
 #home .section-title:hover .section-title-animated .title-additional {
   left: 0;
 }
