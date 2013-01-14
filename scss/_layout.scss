@@ -1,1 +1,23 @@
+// Site layout.
 
+body {
+}
+
+#site-header {
+  width: 100%;
+  height: 50px;
+
+  .centered-header {
+    margin: 0 auto;
+    width: $site-width;
+  }
+}
+
+#site-title {
+  padding: 5px 20px;
+}
+
+#content {
+  width: $site-width;
+  margin: 20px auto;
+}

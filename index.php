@@ -10,13 +10,13 @@ global $wp_query;
 
 <div id="alpha">
   <?php
-  while (have_posts()) {
-    the_post();
+  //while (have_posts()) {
+  //  the_post();
   ?>
   <section class="post">
-  <?php the_content(); ?>
+  <?php // the_content(); ?>
   </section>
-  <?php } ?>
+  <?php // } ?>
 </div>
 
 <div id="beta">

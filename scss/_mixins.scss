@@ -8,3 +8,36 @@
     background-image: url(../images/#{$img}@2x.#{$type});
   }
 }
+
+@mixin textured-bg($bg-file, $opacity) {
+  position: relative;
+  &:after {
+    content: "";
+    background-repeat: repeat;
+    @include retina-background-image($bg-file, "png");
+    @include opacity($opacity);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@mixin box-emboss($opacity, $opacity2) {
+  @include box-shadow(0 1px 0 white($opacity), inset 0 1px 0 black($opacity2));
+}
+
+@mixin letterpress($opacity) {
+  @include text-shadow(0 1px 0 white($opacity));
+}
+
+@function black($opacity) {
+  @return rgba(0, 0, 0, $opacity);
+}
+
+@function white($opacity) {
+  @return rgba(255, 255, 255, $opacity);
+}
+

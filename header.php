@@ -19,15 +19,20 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="scripts/lib/jquery-1.8.3.min.js">\x3C/script>')</script>
 
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+
   <?php wp_head(); ?>
 </head>
 <body>
 
   <header id="site-header">
-    <hgroup id="site-title">
-      <h1 class="name"><?php bloginfo("name"); ?></h1>
-      <h3 class="description"><?php bloginfo("description"); ?></h3>
-    </hgroup>
+    <div class="centered-header">
+      <hgroup id="site-title">
+        <h1 class="name"><?php bloginfo("name"); ?></h1>
+        <div class="title-separator"></div>
+        <h3 class="description"><?php bloginfo("description"); ?></h3>
+      </hgroup>
+    </div>
   </header>
 
   <div id="content" class="clearfix">
