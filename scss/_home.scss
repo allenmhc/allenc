@@ -1,3 +1,5 @@
+// Home page styles.
+
 #home {
   height: 1000px;
 
@@ -16,13 +18,11 @@
     height: 15px;
     top: 1px;
     margin: 0 5px;
-    @include background(linear-gradient(
-      rgba($color-ter, 0) 0%,
-      rgba($color-ter, 0.7) 20%,
-      rgba($color-ter, 0.7) 80%,
-      rgba($color-ter, 0) 100%))
   }
+}
 
+#home {
+  // Spine fade-in animation.
   .section-title-animated {
     position: relative;
     display: block;
@@ -63,4 +63,5 @@
       .title-additional { left: 0; }
     }
   }
+
 }

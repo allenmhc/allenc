@@ -57,3 +57,31 @@ $spine-padding: 20px;
     @include box-shadow(0 0 10px white(0.8));
   }
 }
+
+@mixin spine-interaction($color) {
+  .title-separator {
+    @include background(linear-gradient(
+      rgba($color, 0) 0%,
+      rgba($color, 0.7) 30%,
+      rgba($color, 0.7) 70%,
+      rgba($color, 0) 100%))
+  }
+  &:hover {
+    .spine-marker {
+      background: rgba($color, 0.7);
+    }
+  }
+  &:active {
+    .spine-marker {
+      background: rgba($color, 0.9);
+      @include box-shadow(0 0 10px rgba($color, 0.8));
+    }
+  }
+}
+
+// Spine section colors.
+.section-title {
+  .spine-home & { @include spine-interaction($color-home); }
+  .spine-articles & { @include spine-interaction($color-articles); }
+}
+

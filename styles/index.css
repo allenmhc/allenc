@@ -545,6 +545,45 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
+/* line 62, ../scss/_common.scss */
+.spine-home .section-title .title-separator {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(166, 0, 0, 0)), color-stop(30%, rgba(166, 0, 0, 0.7)), color-stop(70%, rgba(166, 0, 0, 0.7)), color-stop(100%, rgba(166, 0, 0, 0)));
+  background: -webkit-linear-gradient(rgba(166, 0, 0, 0) 0%, rgba(166, 0, 0, 0.7) 30%, rgba(166, 0, 0, 0.7) 70%, rgba(166, 0, 0, 0) 100%);
+  background: -moz-linear-gradient(rgba(166, 0, 0, 0) 0%, rgba(166, 0, 0, 0.7) 30%, rgba(166, 0, 0, 0.7) 70%, rgba(166, 0, 0, 0) 100%);
+  background: -o-linear-gradient(rgba(166, 0, 0, 0) 0%, rgba(166, 0, 0, 0.7) 30%, rgba(166, 0, 0, 0.7) 70%, rgba(166, 0, 0, 0) 100%);
+  background: linear-gradient(rgba(166, 0, 0, 0) 0%, rgba(166, 0, 0, 0.7) 30%, rgba(166, 0, 0, 0.7) 70%, rgba(166, 0, 0, 0) 100%);
+}
+/* line 70, ../scss/_common.scss */
+.spine-home .section-title:hover .spine-marker {
+  background: rgba(166, 0, 0, 0.7);
+}
+/* line 75, ../scss/_common.scss */
+.spine-home .section-title:active .spine-marker {
+  background: rgba(166, 0, 0, 0.9);
+  -webkit-box-shadow: 0 0 10px rgba(166, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 10px rgba(166, 0, 0, 0.8);
+  box-shadow: 0 0 10px rgba(166, 0, 0, 0.8);
+}
+/* line 62, ../scss/_common.scss */
+.spine-articles .section-title .title-separator {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(166, 75, 0, 0)), color-stop(30%, rgba(166, 75, 0, 0.7)), color-stop(70%, rgba(166, 75, 0, 0.7)), color-stop(100%, rgba(166, 75, 0, 0)));
+  background: -webkit-linear-gradient(rgba(166, 75, 0, 0) 0%, rgba(166, 75, 0, 0.7) 30%, rgba(166, 75, 0, 0.7) 70%, rgba(166, 75, 0, 0) 100%);
+  background: -moz-linear-gradient(rgba(166, 75, 0, 0) 0%, rgba(166, 75, 0, 0.7) 30%, rgba(166, 75, 0, 0.7) 70%, rgba(166, 75, 0, 0) 100%);
+  background: -o-linear-gradient(rgba(166, 75, 0, 0) 0%, rgba(166, 75, 0, 0.7) 30%, rgba(166, 75, 0, 0.7) 70%, rgba(166, 75, 0, 0) 100%);
+  background: linear-gradient(rgba(166, 75, 0, 0) 0%, rgba(166, 75, 0, 0.7) 30%, rgba(166, 75, 0, 0.7) 70%, rgba(166, 75, 0, 0) 100%);
+}
+/* line 70, ../scss/_common.scss */
+.spine-articles .section-title:hover .spine-marker {
+  background: rgba(166, 75, 0, 0.7);
+}
+/* line 75, ../scss/_common.scss */
+.spine-articles .section-title:active .spine-marker {
+  background: rgba(166, 75, 0, 0.9);
+  -webkit-box-shadow: 0 0 10px rgba(166, 75, 0, 0.8);
+  -moz-box-shadow: 0 0 10px rgba(166, 75, 0, 0.8);
+  box-shadow: 0 0 10px rgba(166, 75, 0, 0.8);
+}
+
 /* line 6, ../scss/_layout.scss */
 #site-header {
   width: 100%;
@@ -637,11 +676,11 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(rgba(192, 173, 107, 0) 0%, rgba(192, 173, 107, 0.7) 20%, rgba(192, 173, 107, 0.7) 80%, rgba(192, 173, 107, 0) 100%);
 }
 
-/* line 1, ../scss/_home.scss */
+/* line 3, ../scss/_home.scss */
 #home {
   height: 1000px;
 }
-/* line 4, ../scss/_home.scss */
+/* line 6, ../scss/_home.scss */
 #home h3 {
   color: rgba(255, 255, 255, 0.5);
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
@@ -652,17 +691,13 @@ h1, h2, h3, h4, h5, h6 {
   font-variant: small-caps;
   font-weight: 300;
 }
-/* line 15, ../scss/_home.scss */
+/* line 17, ../scss/_home.scss */
 #home .title-separator {
   height: 15px;
   top: 1px;
   margin: 0 5px;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(173, 222, 204, 0)), color-stop(20%, rgba(173, 222, 204, 0.7)), color-stop(80%, rgba(173, 222, 204, 0.7)), color-stop(100%, rgba(173, 222, 204, 0)));
-  background: -webkit-linear-gradient(rgba(173, 222, 204, 0) 0%, rgba(173, 222, 204, 0.7) 20%, rgba(173, 222, 204, 0.7) 80%, rgba(173, 222, 204, 0) 100%);
-  background: -moz-linear-gradient(rgba(173, 222, 204, 0) 0%, rgba(173, 222, 204, 0.7) 20%, rgba(173, 222, 204, 0.7) 80%, rgba(173, 222, 204, 0) 100%);
-  background: -o-linear-gradient(rgba(173, 222, 204, 0) 0%, rgba(173, 222, 204, 0.7) 20%, rgba(173, 222, 204, 0.7) 80%, rgba(173, 222, 204, 0) 100%);
-  background: linear-gradient(rgba(173, 222, 204, 0) 0%, rgba(173, 222, 204, 0.7) 20%, rgba(173, 222, 204, 0.7) 80%, rgba(173, 222, 204, 0) 100%);
 }
+
 /* line 26, ../scss/_home.scss */
 #home .section-title-animated {
   position: relative;

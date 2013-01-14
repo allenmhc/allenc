@@ -11,7 +11,7 @@ global $wp_query;
 <div id="home">
   <section class="spine-left spine-spacer"></section>
 
-  <section class="spine-section">
+  <section class="spine-section spine-home">
     <div class="spine-title">
       <a class="section-title">
         <div class="spine-marker"></div>
@@ -26,7 +26,7 @@ global $wp_query;
 
   <section class="spine-left spine-spacer"></section>
 
-  <section class="spine-section">
+  <section class="spine-section spine-articles">
     <div class="spine-title">
       <a class="section-title">
         <div class="spine-marker"></div>
