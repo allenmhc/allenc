@@ -50,6 +50,7 @@ get_header();
         while (have_posts()): the_post();
         ?>
         <li class="post-box article-box">
+          <div class="post-date article-date"><?php the_time("Y.m.d"); ?></div>
           <a href="<?php the_permalink(); ?>" class="post-link">
             <h4 class="post-title article-title"><?php the_title(); ?></h4>
             <div class="post-excerpt article-excerpt"><?php the_excerpt(); ?></div>

@@ -497,16 +497,32 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 25, ../scss/_common.scss */
 .spine-content {
-  padding-top: 13px;
-  padding-left: 50px;
+  padding-top: 20px;
+  padding-left: 60px;
+  position: relative;
+}
+/* line 29, ../scss/_common.scss */
+.spine-content:after {
+  width: 100%;
+  height: 1px;
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(255, 255, 255, 0.6)), color-stop(60%, rgba(255, 255, 255, 0.4)), color-stop(100%, rgba(255, 255, 255, 0.1)));
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.4) 60%, rgba(255, 255, 255, 0.1) 100%);
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.4) 60%, rgba(255, 255, 255, 0.1) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.4) 60%, rgba(255, 255, 255, 0.1) 100%);
+  background: linear-gradient(left, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.4) 60%, rgba(255, 255, 255, 0.1) 100%);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 36px;
+  left: 0;
 }
 
-/* line 30, ../scss/_common.scss */
+/* line 41, ../scss/_common.scss */
 .spine-title {
   position: relative;
   padding-left: 20px;
 }
-/* line 33, ../scss/_common.scss */
+/* line 44, ../scss/_common.scss */
 .spine-title:before, .spine-title:after {
   position: absolute;
   height: 4px;
@@ -515,16 +531,16 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
   display: block;
 }
-/* line 41, ../scss/_common.scss */
+/* line 52, ../scss/_common.scss */
 .spine-title:before {
   top: 0;
   height: 5px;
 }
-/* line 45, ../scss/_common.scss */
+/* line 56, ../scss/_common.scss */
 .spine-title:after {
   top: 18px;
 }
-/* line 47, ../scss/_common.scss */
+/* line 58, ../scss/_common.scss */
 .spine-title .spine-marker {
   box-sizing: border-box;
   position: absolute;
@@ -545,7 +561,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-/* line 63, ../scss/_common.scss */
+/* line 74, ../scss/_common.scss */
 .spine-home .section-title .title-separator {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(166, 0, 0, 0)), color-stop(30%, rgba(166, 0, 0, 0.7)), color-stop(70%, rgba(166, 0, 0, 0.7)), color-stop(100%, rgba(166, 0, 0, 0)));
   background: -webkit-linear-gradient(rgba(166, 0, 0, 0) 0%, rgba(166, 0, 0, 0.7) 30%, rgba(166, 0, 0, 0.7) 70%, rgba(166, 0, 0, 0) 100%);
@@ -553,18 +569,18 @@ h1, h2, h3, h4, h5, h6 {
   background: -o-linear-gradient(rgba(166, 0, 0, 0) 0%, rgba(166, 0, 0, 0.7) 30%, rgba(166, 0, 0, 0.7) 70%, rgba(166, 0, 0, 0) 100%);
   background: linear-gradient(rgba(166, 0, 0, 0) 0%, rgba(166, 0, 0, 0.7) 30%, rgba(166, 0, 0, 0.7) 70%, rgba(166, 0, 0, 0) 100%);
 }
-/* line 71, ../scss/_common.scss */
+/* line 82, ../scss/_common.scss */
 .spine-home .section-title:hover .spine-marker {
   background: rgba(166, 0, 0, 0.7);
 }
-/* line 76, ../scss/_common.scss */
+/* line 87, ../scss/_common.scss */
 .spine-home .section-title:active .spine-marker {
   background: rgba(166, 0, 0, 0.9);
   -webkit-box-shadow: 0 0 10px rgba(166, 0, 0, 0.8);
   -moz-box-shadow: 0 0 10px rgba(166, 0, 0, 0.8);
   box-shadow: 0 0 10px rgba(166, 0, 0, 0.8);
 }
-/* line 63, ../scss/_common.scss */
+/* line 74, ../scss/_common.scss */
 .spine-articles .section-title .title-separator {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(166, 75, 0, 0)), color-stop(30%, rgba(166, 75, 0, 0.7)), color-stop(70%, rgba(166, 75, 0, 0.7)), color-stop(100%, rgba(166, 75, 0, 0)));
   background: -webkit-linear-gradient(rgba(166, 75, 0, 0) 0%, rgba(166, 75, 0, 0.7) 30%, rgba(166, 75, 0, 0.7) 70%, rgba(166, 75, 0, 0) 100%);
@@ -572,11 +588,11 @@ h1, h2, h3, h4, h5, h6 {
   background: -o-linear-gradient(rgba(166, 75, 0, 0) 0%, rgba(166, 75, 0, 0.7) 30%, rgba(166, 75, 0, 0.7) 70%, rgba(166, 75, 0, 0) 100%);
   background: linear-gradient(rgba(166, 75, 0, 0) 0%, rgba(166, 75, 0, 0.7) 30%, rgba(166, 75, 0, 0.7) 70%, rgba(166, 75, 0, 0) 100%);
 }
-/* line 71, ../scss/_common.scss */
+/* line 82, ../scss/_common.scss */
 .spine-articles .section-title:hover .spine-marker {
   background: rgba(166, 75, 0, 0.7);
 }
-/* line 76, ../scss/_common.scss */
+/* line 87, ../scss/_common.scss */
 .spine-articles .section-title:active .spine-marker {
   background: rgba(166, 75, 0, 0.9);
   -webkit-box-shadow: 0 0 10px rgba(166, 75, 0, 0.8);
@@ -614,19 +630,18 @@ ul.posts-list {
 /* line 10, ../scss/_lists.scss */
 ul.posts-list li.post-box {
   box-sizing: border-box;
+  position: relative;
   display: inline-block;
-  width: 260px;
+  width: 240px;
   height: 200px;
   vertical-align: top;
-  overflow: hidden;
-  margin: 0 35px 0 0;
+  margin: 0 55px 0 0;
   position: relative;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(192, 173, 107, 0.5)), color-stop(100%, rgba(222, 213, 179, 0.1)));
   background: -webkit-linear-gradient(rgba(192, 173, 107, 0.5), rgba(222, 213, 179, 0.1));
   background: -moz-linear-gradient(rgba(192, 173, 107, 0.5), rgba(222, 213, 179, 0.1));
   background: -o-linear-gradient(rgba(192, 173, 107, 0.5), rgba(222, 213, 179, 0.1));
   background: linear-gradient(rgba(192, 173, 107, 0.5), rgba(222, 213, 179, 0.1));
-  border-left: 1px solid rgba(255, 255, 255, 0.6);
 }
 /* line 18, ../scss/_lists.scss */
 ul.posts-list li.post-box:last-of-type {
@@ -656,12 +671,30 @@ ul.posts-list li.post-box:after {
 ul.posts-list li.post-box .post-link {
   text-decoration: none;
   display: block;
-  margin: 10px 15px;
-  width: 230px;
+  margin: 15px 15px;
+  width: 210px;
   height: 170px;
   overflow: hidden;
 }
-/* line 36, ../scss/_lists.scss */
+/* line 35, ../scss/_lists.scss */
+ul.posts-list li.post-box:first-of-type {
+  width: 300px;
+}
+/* line 37, ../scss/_lists.scss */
+ul.posts-list li.post-box:first-of-type .post-link {
+  width: 270px;
+}
+/* line 43, ../scss/_lists.scss */
+ul.posts-list .post-date {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7);
+}
+/* line 53, ../scss/_lists.scss */
 ul.posts-list .post-title {
   height: 35px;
   vertical-align: top;
@@ -671,11 +704,15 @@ ul.posts-list .post-title {
   font-weight: 400;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
 }
-/* line 46, ../scss/_lists.scss */
+/* line 63, ../scss/_lists.scss */
 ul.posts-list .post-excerpt {
   font-size: 14px;
   line-height: 20px;
   color: #ddd;
+}
+/* line 67, ../scss/_lists.scss */
+ul.posts-list .post-excerpt p {
+  margin: 8px 0;
 }
 
 /* line 3, ../scss/_header.scss */
