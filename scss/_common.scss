@@ -8,7 +8,8 @@
 
 // Spine styles.
 $spine-marker-height: 13px;
-$spine-padding: 20px;
+$spine-title-padding: 20px;
+$spine-padding: 50px;
 .spine-left {
   border-left: 1px solid white(0.6);
 }
@@ -28,7 +29,7 @@ $spine-padding: 20px;
 
 .spine-title {
   position: relative;
-  padding-left: $spine-padding;
+  padding-left: $spine-title-padding;
   &:before, &:after {
     position: absolute;
     height: 4px;

@@ -5,7 +5,7 @@ global $wp_query;
 ?>
 
 <?php
-  get_header();
+get_header();
 ?>
 
 <div id="home">
@@ -38,7 +38,25 @@ global $wp_query;
       </a>
     </div>
     <div class="spine-left spine-content">
-      Stuff
+      <ul class="posts-list articles-list">
+        <?php
+        rewind_posts();
+        $query_args = array(
+          "meta_key" => "article",
+          "meta_value" => 1,
+          "posts_per_page" => 3
+        );
+        query_posts($query_args);
+        while (have_posts()): the_post();
+        ?>
+        <li class="post-box article-box">
+          <a href="<?php the_permalink(); ?>" class="post-link">
+            <h4 class="post-title article-title"><?php the_title(); ?></h4>
+            <div class="post-excerpt article-excerpt"><?php the_excerpt(); ?></div>
+          </a>
+        </li>
+        <?php endwhile; ?>
+      </ul>
     </div>
   </section>
 </div>
