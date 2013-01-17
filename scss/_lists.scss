@@ -6,6 +6,7 @@ $post-padding-y: 15px;
 ul.posts-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 
   a.post-box {
     text-decoration: none;
@@ -32,7 +33,7 @@ ul.posts-list {
 
   .post-box-outer {
     display: inline-block;
-    margin: -30px 55px 0 0;
+    margin: -15px 55px 0 0;
     &:first-of-type {
       .post-box {
         width: $post-width + 60px;

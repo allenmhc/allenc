@@ -37,6 +37,7 @@ get_header();
         </div>
       </a>
     </div>
+
     <div class="spine-left spine-content">
       <ul class="posts-list articles-list">
         <?php
@@ -62,6 +63,22 @@ get_header();
       </ul>
     </div>
   </section>
+
+  <section class="spine-left spine-spacer"></section>
+
+  <section class="spine-section spine-archives">
+    <div class="spine-title">
+      <a class="section-title">
+        <div class="spine-marker"></div>
+        <h3 class="title-main">Posts</h3>
+        <div class="section-title-animated">
+          <div class="title-separator"></div>
+          <h3 class="title-additional">Thoughtstream</h3>
+        </div>
+      </a>
+    </div>
+  </section>
+
 </div>
 
 <?php
