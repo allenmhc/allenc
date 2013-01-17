@@ -513,7 +513,7 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
   display: block;
   position: absolute;
-  top: 67px;
+  top: 66px;
   left: 0;
 }
 
@@ -626,8 +626,9 @@ h1, h2, h3, h4, h5, h6 {
 ul.posts-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
-/* line 10, ../scss/_lists.scss */
+/* line 11, ../scss/_lists.scss */
 ul.posts-list a.post-box {
   text-decoration: none;
   box-sizing: border-box;
@@ -647,45 +648,45 @@ ul.posts-list a.post-box {
   -moz-box-shadow: 0 0 4px rgba(255, 255, 255, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 4px rgba(255, 255, 255, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
-/* line 24, ../scss/_lists.scss */
+/* line 25, ../scss/_lists.scss */
 ul.posts-list a.post-box:hover, ul.posts-list a.post-box:active {
   -webkit-box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
   -moz-box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
-/* line 27, ../scss/_lists.scss */
+/* line 28, ../scss/_lists.scss */
 ul.posts-list a.post-box:active {
   border-width: 2px;
 }
-/* line 29, ../scss/_lists.scss */
+/* line 30, ../scss/_lists.scss */
 ul.posts-list a.post-box:active .post-box-inner {
   margin: 14px 14px;
 }
-/* line 33, ../scss/_lists.scss */
+/* line 34, ../scss/_lists.scss */
 ul.posts-list .post-box-outer {
   display: inline-block;
-  margin: -30px 55px 0 0;
+  margin: -15px 55px 0 0;
 }
-/* line 37, ../scss/_lists.scss */
+/* line 38, ../scss/_lists.scss */
 ul.posts-list .post-box-outer:first-of-type .post-box {
   width: 300px;
 }
-/* line 39, ../scss/_lists.scss */
+/* line 40, ../scss/_lists.scss */
 ul.posts-list .post-box-outer:first-of-type .post-box .post-box-inner {
   width: 270px;
 }
-/* line 42, ../scss/_lists.scss */
+/* line 43, ../scss/_lists.scss */
 ul.posts-list .post-box-outer:last-of-type {
   margin-right: 0;
 }
-/* line 45, ../scss/_lists.scss */
+/* line 46, ../scss/_lists.scss */
 ul.posts-list .post-box-inner {
   margin: 15px 15px;
   width: 210px;
   height: 170px;
   overflow: hidden;
 }
-/* line 52, ../scss/_lists.scss */
+/* line 53, ../scss/_lists.scss */
 ul.posts-list .post-date {
   position: absolute;
   top: 10px;
@@ -696,7 +697,7 @@ ul.posts-list .post-date {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7);
   font-family: Inconsolata, "Andale Mono", "Courier New", "Courier", monospace;
 }
-/* line 61, ../scss/_lists.scss */
+/* line 62, ../scss/_lists.scss */
 ul.posts-list .post-date:after {
   position: absolute;
   display: block;
@@ -715,7 +716,7 @@ ul.posts-list .post-date:after {
   -moz-box-shadow: 0 0 2px rgba(255, 255, 255, 0.4);
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.4);
 }
-/* line 75, ../scss/_lists.scss */
+/* line 76, ../scss/_lists.scss */
 ul.posts-list .post-title {
   vertical-align: top;
   overflow: hidden;
@@ -726,14 +727,14 @@ ul.posts-list .post-title {
   font-weight: 400;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
 }
-/* line 86, ../scss/_lists.scss */
+/* line 87, ../scss/_lists.scss */
 ul.posts-list .post-excerpt {
   font-size: 14px;
   line-height: 20px;
   padding: 0 10px;
   color: #a4a4a4;
 }
-/* line 91, ../scss/_lists.scss */
+/* line 92, ../scss/_lists.scss */
 ul.posts-list .post-excerpt p {
   margin: 8px 0;
 }
