@@ -10,7 +10,41 @@ body {
   .centered-header {
     margin: 0 auto;
     width: $site-width;
+    position: relative;
   }
+
+  #rss {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    text-decoration: none;
+    color: black(0.8);
+    @include letterpress(0.4);
+    &:after {
+      padding-left: 8px;
+      font: 110%/1.35 zocial;
+      font-style: normal;
+      font-weight: normal;
+      content: "R";
+      @include opacity(1);
+    }
+
+    span {
+      position: relative;
+      left: 10px;
+      @include opacity(0);
+      @include transition-property(opacity left);
+      @include transition-duration(0.3s, 0.3s);
+      @include transition-timing-function(linear, linear);
+    }
+    &:hover {
+      span {
+        left: 0;
+        @include opacity(1);
+      }
+    }
+  }
+
 }
 
 #site-title {

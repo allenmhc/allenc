@@ -121,5 +121,5 @@ $spine-padding: 60px;
   .spine-home & { @include spine-interaction($color-home); }
   .spine-articles & { @include spine-interaction($color-articles); }
   .spine-archives & { @include spine-interaction($color-archives); }
+  .spine-about & { @include spine-interaction($color-about); }
 }
-

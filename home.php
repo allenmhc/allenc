@@ -97,6 +97,22 @@ get_header();
     </div>
   </section>
 
+  <section class="spine-left spine-spacer"></section>
+
+  <section class="spine-section spine-about">
+    <div class="spine-title">
+      <a class="section-title">
+        <div class="spine-marker"></div>
+        <h3 class="title-main">About</h3>
+        <div class="section-title-animated">
+          <div class="title-separator"></div>
+          <h3 class="title-additional">Identity</h3>
+        </div>
+      </a>
+    </div>
+  </section>
+  <section class="spine-left spine-spacer"></section>
+
 </div>
 
 <?php

@@ -11,6 +11,7 @@
   <title><?php wp_title(); ?></title>
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/styles/index.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/styles/zocial.css" type="text/css" media="screen" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS" href="<?php bloginfo('rss2_url'); ?>" />
 
@@ -52,6 +53,8 @@
         <div class="title-separator"></div>
         <h3 class="description"><?php bloginfo("description"); ?></h3>
       </hgroup>
+
+      <a id="rss" href="<?php bloginfo('rss2_url'); ?>"><span>RSS</span></a>
     </div>
   </header>
 
