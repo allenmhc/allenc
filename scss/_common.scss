@@ -19,12 +19,7 @@ $spine-padding: 60px;
   height: $spine-marker-height;
 }
 
-.spine-section {
-}
-
-.spine-content {
-  padding-top: 50px;
-  padding-left: $spine-padding;
+.spine-extrude {
   position: relative;
   &:after {
     width: 100%;
@@ -36,6 +31,36 @@ $spine-padding: 60px;
     top: 65px + 1px;
     left: 0;
   }
+}
+
+.spine-extrude-diagonal {
+  position: relative;
+  &:before {
+    width: 85px;
+    height: 85px;
+    border-top: 1px solid white(0.6);
+    @include rotate(45deg);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 47px;
+    left: -42px;
+  }
+  &:after {
+    width: 1px;
+    height: 20px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 106px + 8 * 48px;
+    left: 60px;
+    @include background(linear-gradient(white(0.6) 0%, white(0.0) 100%));
+  }
+}
+
+.spine-content {
+  padding-top: 50px;
+  padding-left: $spine-padding;
 }
 
 .spine-title {
@@ -95,5 +120,6 @@ $spine-padding: 60px;
 .section-title {
   .spine-home & { @include spine-interaction($color-home); }
   .spine-articles & { @include spine-interaction($color-articles); }
+  .spine-archives & { @include spine-interaction($color-archives); }
 }
 
