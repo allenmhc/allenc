@@ -98,6 +98,9 @@ ul.posts-list {
     border-left: 1px solid white(0.6);
     padding: 10px 15px 20px;
     position: relative;
+    &:last-of-type {
+      border-left-color: transparent;
+    }
     &:before {
       position: absolute;
       display: block;

@@ -538,11 +538,11 @@ h1, h2, h3, h4, h5, h6 {
 /* line 49, ../scss/_common.scss */
 .spine-extrude-diagonal:after {
   width: 1px;
-  height: 20px;
+  height: 30px;
   content: "";
   display: block;
   position: absolute;
-  top: 490px;
+  top: 440px;
   left: 60px;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.6)), color-stop(100%, rgba(255, 255, 255, 0)));
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
@@ -802,6 +802,10 @@ ul.posts-list .post-line-outer {
   position: relative;
 }
 /* line 101, ../scss/_lists.scss */
+ul.posts-list .post-line-outer:last-of-type {
+  border-left-color: transparent;
+}
+/* line 104, ../scss/_lists.scss */
 ul.posts-list .post-line-outer:before {
   position: absolute;
   display: block;
@@ -820,15 +824,15 @@ ul.posts-list .post-line-outer:before {
   -moz-box-shadow: 0 0 2px rgba(255, 255, 255, 0.4);
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.4);
 }
-/* line 115, ../scss/_lists.scss */
+/* line 118, ../scss/_lists.scss */
 ul.posts-list .archive-date {
   top: -5px;
 }
-/* line 117, ../scss/_lists.scss */
+/* line 120, ../scss/_lists.scss */
 ul.posts-list .archive-date:after {
   content: none;
 }
-/* line 120, ../scss/_lists.scss */
+/* line 123, ../scss/_lists.scss */
 ul.posts-list a.post-line {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
@@ -836,16 +840,16 @@ ul.posts-list a.post-line {
   font-weight: 400;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
 }
-/* line 126, ../scss/_lists.scss */
+/* line 129, ../scss/_lists.scss */
 ul.posts-list a.post-line:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
-/* line 129, ../scss/_lists.scss */
+/* line 132, ../scss/_lists.scss */
 ul.posts-list a.post-line:active {
   border-bottom: 2px solid rgba(255, 255, 255, 0.4);
 }
 
-/* line 135, ../scss/_lists.scss */
+/* line 138, ../scss/_lists.scss */
 ul.archives-list {
   margin-top: 40px;
 }

@@ -48,11 +48,11 @@ $spine-padding: 60px;
   }
   &:after {
     width: 1px;
-    height: 20px;
+    height: 30px;
     content: "";
     display: block;
     position: absolute;
-    top: 106px + 8 * 48px;
+    top: 104px + 7 * 48px;
     left: 60px;
     @include background(linear-gradient(white(0.6) 0%, white(0.0) 100%));
   }
