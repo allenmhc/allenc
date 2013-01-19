@@ -138,3 +138,47 @@ ul.posts-list {
 ul.archives-list {
   margin-top: 40px
 }
+
+
+ul.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .social-icon {
+    float: left;
+
+    a {
+      color: white(0.8);
+      @include letterpress-black(0.4);
+      text-decoration: none;
+      margin-left: 20px;
+      position: relative;
+      &:before {
+        font: 110%/1.35 zocial;
+        font-style: normal;
+        font-weight: normal;
+      }
+      span {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        position: absolute;
+        top: 25px;
+        left: 0;
+      }
+      &:active {
+        &.twitter { color: rgba($color-twitter, 0.8); }
+        &.googleplus { color: rgba($color-googleplus, 0.8); }
+        &.linkedin { color: rgba($color-linkedin, 0.8); }
+        &.quora { color: rgba($color-quora, 0.8); }
+        &.github { color: rgba($color-github, 0.8); }
+      }
+    }
+    a.twitter:before { content: "T"; }
+    a.googleplus:before { content: "G"; }
+    a.linkedin:before { content: "L"; }
+    a.quora:before { content: "q"; }
+    a.github:before { content: "g"; }
+  }
+}

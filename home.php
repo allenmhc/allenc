@@ -22,6 +22,36 @@ get_header();
         </div>
       </a>
     </div>
+
+    <div class="spine-right-section">
+      <ul class="social-list clearfix">
+        <li class="social-icon">
+          <a href="http://twitter.com/#!/allenmhc" target="_blank" title="Twitter" class="twitter" rel="me">
+            <span>Twitter</span>
+          </a>
+        </li>
+        <li class="social-icon">
+          <a rel="author" target="_blank" title="Google+" class="googleplus" rel="me" href="https://profiles.google.com/allenc">
+            <span>Google+</span>
+          </a>
+        </li>
+        <li class="social-icon">
+          <a href="http://www.quora.com/Allen-Cheung" target="_blank" title="Quora" class="quora" rel="me">
+            <span>Quora</span>
+          </a>
+        </li>
+        <li class="social-icon">
+          <a href="http://www.linkedin.com/in/allencheung" target="_blank" title="LinkedIn" class="linkedin" rel="me">
+            <span>LinkedIn</span>
+          </a>
+        </li>
+        <li class="social-icon">
+          <a href="https://github.com/allenmhc" target="_blank" title="Github" class="github" rel="me">
+            <span>Github</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </section>
 
   <section class="spine-left spine-spacer"></section>

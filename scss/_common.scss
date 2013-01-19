@@ -10,8 +10,19 @@
 $spine-marker-height: 13px;
 $spine-title-padding: 20px;
 $spine-padding: 60px;
+
+.spine-section {
+  position: relative;
+}
+
 .spine-left {
   border-left: 1px solid white(0.6);
+}
+
+.spine-right-section {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .spine-spacer {

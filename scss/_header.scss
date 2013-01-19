@@ -55,7 +55,6 @@
     font-style: normal;
     font-weight: normal;
     content: "R";
-    @include opacity(1);
   }
 
   span {
@@ -73,7 +72,7 @@
     }
   }
   &:active {
-    color: rgba($color-rss, 0.6);
+    color: rgba($color-rss, 0.8);
     @include letterpress-black(0.4);
   }
 }
