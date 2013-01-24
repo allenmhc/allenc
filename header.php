@@ -48,11 +48,13 @@
 
   <header id="site-header">
     <div class="centered-header">
-      <hgroup id="site-title">
-        <h1 class="name"><?php bloginfo("name"); ?></h1>
-        <div class="title-separator"></div>
-        <h3 class="description"><?php bloginfo("description"); ?></h3>
-      </hgroup>
+      <a id="site-title-link" href="<?php echo get_home_url(); ?>">
+        <hgroup id="site-title">
+          <h1 class="name"><?php bloginfo("name"); ?></h1>
+          <div class="title-separator"></div>
+          <h3 class="description"><?php bloginfo("description"); ?></h3>
+        </hgroup>
+      </a>
 
       <a id="rss" href="<?php bloginfo('rss2_url'); ?>"><span>RSS</span></a>
     </div>

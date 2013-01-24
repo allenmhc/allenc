@@ -12,8 +12,6 @@
   font-family: $font-titles;
   @include text-shadow(0 1px white(0.3));
   text-transform: uppercase;
-  padding: 5px 0;
-
 
   .name, .description {
     font-size: 28px;
@@ -21,6 +19,7 @@
     margin: 0;
     padding: 0;
     display: inline-block;
+    color: black(1);
   }
   .name {
     font-weight: 400;
@@ -42,15 +41,19 @@
   }
 }
 
+#site-title-link {
+  text-decoration: none;
+}
+
 #rss {
   position: absolute;
   right: 0;
-  top: 10px;
+  top: 25px;
   text-decoration: none;
   color: black(0.8);
   @include letterpress(0.4);
   &:after {
-    padding-left: 8px;
+    padding-left: 10px;
     font: 110%/1.35 zocial;
     font-style: normal;
     font-weight: normal;
@@ -62,7 +65,7 @@
     left: 10px;
     @include opacity(0);
     @include transition-property(opacity left);
-    @include transition-duration(0.3s, 0.3s);
+    @include transition-duration(0.2s, 0.2s);
     @include transition-timing-function(linear, linear);
   }
   &:hover {

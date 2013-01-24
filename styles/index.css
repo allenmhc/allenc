@@ -468,7 +468,7 @@ body {
   font-size: 16px;
   font-weight: normal;
   font-family: "Proxima Nova", "PT Sans", "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
-  background: black url(../images/bg-bokeh.jpg) no-repeat fixed center center;
+  background: black url(../images/bg-waves.jpg) no-repeat fixed center center;
 }
 
 /* line 21, ../scss/_base.scss */
@@ -693,24 +693,41 @@ h1, h2, h3, h4, h5, h6 {
 /* line 6, ../scss/_layout.scss */
 #site-header {
   width: 100%;
-  height: 50px;
+  height: 80px;
 }
 /* line 10, ../scss/_layout.scss */
 #site-header .centered-header {
   margin: 0 auto;
   width: 960px;
   position: relative;
+  padding: 20px 0;
 }
 
-/* line 18, ../scss/_layout.scss */
-#site-title {
-  padding: 5px 20px;
+/* line 19, ../scss/_layout.scss */
+#site-title-link {
+  display: block;
 }
 
-/* line 22, ../scss/_layout.scss */
+/* line 23, ../scss/_layout.scss */
 #content {
+  overflow: hidden;
+  *zoom: 1;
   width: 960px;
   margin: 0 auto;
+}
+
+/* line 29, ../scss/_layout.scss */
+#alpha {
+  width: 530px;
+  float: left;
+  padding-right: 70px;
+  min-height: 500px;
+}
+
+/* line 36, ../scss/_layout.scss */
+#beta {
+  width: 360px;
+  float: right;
 }
 
 /* line 8, ../scss/_lists.scss */
@@ -999,27 +1016,27 @@ ul.social-list .social-icon a.github:before {
   font-family: "Lato", Arial, sans-serif;
   text-shadow: 0 1px rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
-  padding: 5px 0;
 }
-/* line 18, ../scss/_header.scss */
+/* line 16, ../scss/_header.scss */
 #site-title .name, #site-title .description {
   font-size: 28px;
   letter-spacing: 5px;
   margin: 0;
   padding: 0;
   display: inline-block;
+  color: black;
 }
-/* line 25, ../scss/_header.scss */
+/* line 24, ../scss/_header.scss */
 #site-title .name {
   font-weight: 400;
   padding-right: 10px;
 }
-/* line 29, ../scss/_header.scss */
+/* line 28, ../scss/_header.scss */
 #site-title .description {
   font-weight: 300;
   padding-left: 10px;
 }
-/* line 34, ../scss/_header.scss */
+/* line 33, ../scss/_header.scss */
 #site-title .title-separator {
   height: 24px;
   top: 2px;
@@ -1030,24 +1047,29 @@ ul.social-list .social-icon a.github:before {
   background: linear-gradient(rgba(192, 173, 107, 0) 0%, rgba(192, 173, 107, 0.7) 20%, rgba(192, 173, 107, 0.7) 80%, rgba(192, 173, 107, 0) 100%);
 }
 
-/* line 45, ../scss/_header.scss */
+/* line 44, ../scss/_header.scss */
+#site-title-link {
+  text-decoration: none;
+}
+
+/* line 48, ../scss/_header.scss */
 #rss {
   position: absolute;
   right: 0;
-  top: 10px;
+  top: 25px;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
-/* line 52, ../scss/_header.scss */
+/* line 55, ../scss/_header.scss */
 #rss:after {
-  padding-left: 8px;
+  padding-left: 10px;
   font: 110%/1.35 zocial;
   font-style: normal;
   font-weight: normal;
   content: "R";
 }
-/* line 60, ../scss/_header.scss */
+/* line 63, ../scss/_header.scss */
 #rss span {
   position: relative;
   left: 10px;
@@ -1057,22 +1079,22 @@ ul.social-list .social-icon a.github:before {
   -moz-transition-property: opacity, left;
   -o-transition-property: opacity, left;
   transition-property: opacity left;
-  -webkit-transition-duration: 0.3s, 0.3s;
-  -moz-transition-duration: 0.3s, 0.3s;
-  -o-transition-duration: 0.3s, 0.3s;
-  transition-duration: 0.3s, 0.3s;
+  -webkit-transition-duration: 0.2s, 0.2s;
+  -moz-transition-duration: 0.2s, 0.2s;
+  -o-transition-duration: 0.2s, 0.2s;
+  transition-duration: 0.2s, 0.2s;
   -webkit-transition-timing-function: linear, linear;
   -moz-transition-timing-function: linear, linear;
   -o-transition-timing-function: linear, linear;
   transition-timing-function: linear, linear;
 }
-/* line 69, ../scss/_header.scss */
+/* line 72, ../scss/_header.scss */
 #rss:hover span {
   left: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 74, ../scss/_header.scss */
+/* line 77, ../scss/_header.scss */
 #rss:active {
   color: rgba(255, 127, 37, 0.8);
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
@@ -1162,4 +1184,11 @@ ul.social-list .social-icon a.github:before {
 /* line 66, ../scss/_home.scss */
 #home .section-title:hover .section-title-animated .title-additional {
   left: 0;
+}
+
+/* line 3, ../scss/_post.scss */
+.post {
+  color: white;
+  font-size: 16px;
+  line-height: 25px;
 }

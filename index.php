@@ -9,14 +9,17 @@ global $wp_query;
 ?>
 
 <div id="alpha">
-  <?php
-  //while (have_posts()) {
-  //  the_post();
-  ?>
   <section class="post">
-  <?php // the_content(); ?>
+    <?php
+    while (have_posts()):
+      the_post();
+      echo '<h1>';
+      the_title();
+      echo '</h1>';
+      the_content();
+    endwhile;
+    ?>
   </section>
-  <?php // } ?>
 </div>
 
 <div id="beta">
