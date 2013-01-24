@@ -791,11 +791,11 @@ ul.social-list .social-icon a.github:before {
 /* line 22, ../scss/_spine.scss */
 .spine-spacer {
   width: 100%;
-  height: 5px;
+  height: 10px;
 }
 /* line 25, ../scss/_spine.scss */
 .spine-spacer:first-child {
-  height: 20px;
+  height: 40px;
 }
 
 /* line 28, ../scss/_spine.scss */
