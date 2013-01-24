@@ -47,6 +47,24 @@ get_header();
         <?php endwhile; ?>
       </ul>
     </div>
+
+    <div class="spine-left spine-content spine-extrude-diagonal">
+      <ul class="posts-list archives-list">
+        <?php
+        rewind_posts();
+        $query_args = array(
+          "posts_per_page" => 8
+        );
+        query_posts($query_args);
+        while (have_posts()): the_post();
+        ?>
+        <li class="post-line-outer">
+          <div class="post-date archive-date"><?php the_time("Y.m.d"); ?></div>
+          <a href="<?php the_permalink(); ?>" class="post-line"><?php the_title(); ?></a>
+        </li>
+        <?php endwhile; ?>
+      </ul>
+    </div>
   </section>
 
   <section class="spine-left spine-spacer"></section>

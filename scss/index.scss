@@ -10,11 +10,17 @@
 @import "normalize";
 @import "config";
 @import "mixins";
+
 @import "base";
 @import "common";
 @import "layout";
+
 @import "lists";
+@import "spine";
+
 @import "header";
+@import "footer";
+@import "sidebar";
+
 @import "home";
 @import "post";
-@import "footer";
