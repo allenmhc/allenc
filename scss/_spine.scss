@@ -2,27 +2,42 @@
 
 $spine-spacer-height: 10px;
 $spine-marker-height: 13px;
-$spine-title-padding: 50px;
+$spine-dot-height: 7px;
+$spine-content-padding: 50px;
 $spine-padding: 60px;
 
 .spine-section {
   position: relative;
+  padding-left: $spine-content-padding;
 }
 
 .spine-left {
   border-left: 1px solid white(0.6);
 }
 
-.spine-right-section {
-  position: absolute;
-  top: 0;
-  right: 0;
+@for $i from 1 through 10 {
+  .spine-spacer-#{$i*10} {
+    @extend .spine-left;
+    width: 100%;
+    height: $spine-spacer-height * $i;
+  }
 }
 
-.spine-spacer {
-  width: 100%;
-  height: $spine-spacer-height;
-  &:first-child { height: 4 * $spine-spacer-height; }
+.spine-dot {
+  @extend .spine-left;
+  position: relative;
+  &:after {
+    position: absolute;
+    top: 10px;
+    left: floor(-$spine-dot-height / 2);
+    display: block;
+    width: $spine-dot-height;
+    height: $spine-dot-height;
+    background-color: white(0.8);
+    @include border-radius(5px);
+    content: "";
+    @include box-shadow(0 0 2px white(0.4));
+  }
 }
 
 .spine-extrude {
@@ -70,8 +85,6 @@ $spine-padding: 60px;
 }
 
 .spine-title {
-  position: relative;
-  padding-left: $spine-title-padding;
   &:before, &:after {
     position: absolute;
     height: 4px;

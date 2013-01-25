@@ -72,3 +72,58 @@
     }
   }
 }
+
+@mixin social-icon-content-color($name, $content, $color) {
+  a.#{$name} {
+    &:before { content: $content; }
+    &:hover, &:active {
+      color: rgba($color, 0.8);
+      span { color: rgba($color, 0.8); }
+    }
+    &:active {
+      color: rgba($color, 0.6);
+      span { color: rgba($color, 0.6); }
+    }
+  }
+}
+
+#beta {
+  .social-list {
+    @include clearfix;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .social-icon {
+      margin: 0 0 5px;
+
+      a {
+        color: white(0.7);
+        @include letterpress-black(0.4);
+        text-decoration: none;
+        position: relative;
+        &:before {
+          font: 130%/1.35 zocial;
+          font-style: normal;
+          font-weight: normal;
+          display: inline-block;
+        }
+        span {
+          color: white(0.6);
+          display: block;
+          text-align: center;
+          position: absolute;
+          text-transform: lowercase;
+          top: -2px;
+          left: 0;
+          padding-left: 60px;
+        }
+      }
+      @include social-icon-content-color("twitter", "T", $color-twitter);
+      @include social-icon-content-color("googleplus", "+", $color-googleplus);
+      @include social-icon-content-color("linkedin", "L", $color-linkedin);
+      @include social-icon-content-color("quora", "q", $color-quora);
+      @include social-icon-content-color("github", "\00E8", $color-github);
+    }
+  }
+}
