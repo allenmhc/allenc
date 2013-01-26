@@ -1182,8 +1182,13 @@ ul.archives-list {
   -o-transition-duration: 0, 0, 0;
   transition-duration: 0, 0, 0;
 }
+/* line 73, ../scss/_sidebar.scss */
+#beta .section-title:active {
+  padding-top: 2px;
+  margin-bottom: -2px;
+}
 
-/* line 91, ../scss/_sidebar.scss */
+/* line 96, ../scss/_sidebar.scss */
 #beta .social-list {
   overflow: hidden;
   *zoom: 1;
@@ -1191,27 +1196,35 @@ ul.archives-list {
   margin: 0;
   padding: 0;
 }
-/* line 97, ../scss/_sidebar.scss */
+/* line 102, ../scss/_sidebar.scss */
 #beta .social-list .social-icon {
-  margin: 0 0 5px;
+  margin: 0 0 8px;
 }
-/* line 100, ../scss/_sidebar.scss */
+/* line 105, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a {
   color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
   text-decoration: none;
   position: relative;
 }
-/* line 105, ../scss/_sidebar.scss */
+/* line 111, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a:before {
   font: 130%/1.35 zocial;
   font-style: normal;
   font-weight: normal;
   display: inline-block;
 }
-/* line 111, ../scss/_sidebar.scss */
+/* line 117, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a span {
   color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
   display: block;
   text-align: center;
   position: absolute;
@@ -1220,103 +1233,108 @@ ul.archives-list {
   left: 0;
   padding-left: 60px;
 }
-/* line 78, ../scss/_sidebar.scss */
+/* line 82, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.twitter:before {
   content: "T";
 }
-/* line 79, ../scss/_sidebar.scss */
+/* line 83, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.twitter:hover, #beta .social-list .social-icon a.twitter:active {
   color: rgba(70, 192, 251, 0.8);
 }
-/* line 81, ../scss/_sidebar.scss */
+/* line 85, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.twitter:hover span, #beta .social-list .social-icon a.twitter:active span {
   color: rgba(70, 192, 251, 0.8);
 }
-/* line 83, ../scss/_sidebar.scss */
+/* line 87, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.twitter:active {
   color: rgba(70, 192, 251, 0.6);
+  top: 2px;
 }
-/* line 85, ../scss/_sidebar.scss */
+/* line 89, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.twitter:active span {
   color: rgba(70, 192, 251, 0.6);
 }
-/* line 78, ../scss/_sidebar.scss */
+/* line 82, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.googleplus:before {
   content: "+";
 }
-/* line 79, ../scss/_sidebar.scss */
+/* line 83, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.googleplus:hover, #beta .social-list .social-icon a.googleplus:active {
   color: rgba(221, 75, 57, 0.8);
 }
-/* line 81, ../scss/_sidebar.scss */
+/* line 85, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.googleplus:hover span, #beta .social-list .social-icon a.googleplus:active span {
   color: rgba(221, 75, 57, 0.8);
 }
-/* line 83, ../scss/_sidebar.scss */
+/* line 87, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.googleplus:active {
   color: rgba(221, 75, 57, 0.6);
+  top: 2px;
 }
-/* line 85, ../scss/_sidebar.scss */
+/* line 89, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.googleplus:active span {
   color: rgba(221, 75, 57, 0.6);
 }
-/* line 78, ../scss/_sidebar.scss */
+/* line 82, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.linkedin:before {
   content: "L";
 }
-/* line 79, ../scss/_sidebar.scss */
+/* line 83, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.linkedin:hover, #beta .social-list .social-icon a.linkedin:active {
   color: rgba(0, 131, 168, 0.8);
 }
-/* line 81, ../scss/_sidebar.scss */
+/* line 85, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.linkedin:hover span, #beta .social-list .social-icon a.linkedin:active span {
   color: rgba(0, 131, 168, 0.8);
 }
-/* line 83, ../scss/_sidebar.scss */
+/* line 87, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.linkedin:active {
   color: rgba(0, 131, 168, 0.6);
+  top: 2px;
 }
-/* line 85, ../scss/_sidebar.scss */
+/* line 89, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.linkedin:active span {
   color: rgba(0, 131, 168, 0.6);
 }
-/* line 78, ../scss/_sidebar.scss */
+/* line 82, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.quora:before {
   content: "q";
 }
-/* line 79, ../scss/_sidebar.scss */
+/* line 83, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.quora:hover, #beta .social-list .social-icon a.quora:active {
   color: rgba(168, 36, 0, 0.8);
 }
-/* line 81, ../scss/_sidebar.scss */
+/* line 85, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.quora:hover span, #beta .social-list .social-icon a.quora:active span {
   color: rgba(168, 36, 0, 0.8);
 }
-/* line 83, ../scss/_sidebar.scss */
+/* line 87, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.quora:active {
   color: rgba(168, 36, 0, 0.6);
+  top: 2px;
 }
-/* line 85, ../scss/_sidebar.scss */
+/* line 89, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.quora:active span {
   color: rgba(168, 36, 0, 0.6);
 }
-/* line 78, ../scss/_sidebar.scss */
+/* line 82, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.github:before {
   content: "\00E8";
 }
-/* line 79, ../scss/_sidebar.scss */
+/* line 83, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.github:hover, #beta .social-list .social-icon a.github:active {
   color: rgba(251, 251, 251, 0.8);
 }
-/* line 81, ../scss/_sidebar.scss */
+/* line 85, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.github:hover span, #beta .social-list .social-icon a.github:active span {
   color: rgba(251, 251, 251, 0.8);
 }
-/* line 83, ../scss/_sidebar.scss */
+/* line 87, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.github:active {
   color: rgba(251, 251, 251, 0.6);
+  top: 2px;
 }
-/* line 85, ../scss/_sidebar.scss */
+/* line 89, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.github:active span {
   color: rgba(251, 251, 251, 0.6);
 }
