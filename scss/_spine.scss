@@ -115,6 +115,22 @@ $spine-padding: 60px;
   }
 }
 
+.spine-tail {
+  position: relative;
+  border: none;
+
+  &:after {
+    width: 1px;
+    height: 100%;
+    @include background(linear-gradient(white(0.6) 0%, white(0.4) 60%, white(0.0) 100%));
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 @mixin spine-interaction($color) {
   .title-separator {
     @include background(linear-gradient(

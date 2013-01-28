@@ -1,6 +1,8 @@
 // Sidebar styles.
 
 #beta {
+  min-height: 600px;
+
   h3 {
     color: white(0.5);
     @include letterpress(0.5);

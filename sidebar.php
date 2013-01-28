@@ -111,3 +111,5 @@ function nav_link($page) {
     <?php wp_reset_query(); ?>
   <?php endif; ?>
 </section>
+
+<section class="spine-spacer-100 spine-tail"></section>
