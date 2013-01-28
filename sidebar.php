@@ -95,3 +95,19 @@ function nav_link($page) {
     </li>
   </ul>
 </section>
+
+<section class="spine-spacer-80"></section>
+
+<section class="spine-section spine-dot" id="search-form">
+  <?php get_search_form(); ?>
+  <?php if (is_search()): ?>
+    <?php
+    global $wp_query;
+    $total_results = $wp_query->found_posts;
+    ?>
+    <aside id="search-info">
+      <?php echo $total_results; ?> post<?php echo ($total_results == 1) ? "" : "s" ?>
+    </aside>
+    <?php wp_reset_query(); ?>
+  <?php endif; ?>
+</section>

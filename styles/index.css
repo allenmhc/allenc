@@ -468,10 +468,11 @@ body {
   font-size: 16px;
   font-weight: normal;
   font-family: "Proxima Nova", "PT Sans", "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+  color: #eee;
   background: black url(../images/bg-waves.jpg) no-repeat fixed center center;
 }
 
-/* line 21, ../scss/_base.scss */
+/* line 22, ../scss/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -1337,6 +1338,69 @@ ul.archives-list {
 /* line 89, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.github:active span {
   color: rgba(251, 251, 251, 0.6);
+}
+
+/* line 139, ../scss/_sidebar.scss */
+#beta #search-form {
+  width: 260px;
+}
+/* line 142, ../scss/_sidebar.scss */
+#beta #searchform {
+  position: relative;
+}
+/* line 145, ../scss/_sidebar.scss */
+#beta #searchform fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 152, ../scss/_sidebar.scss */
+#beta #search {
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  width: 100%;
+  border: none;
+  color: #eee;
+  outline: none;
+  padding: 5px 5px 5px 35px;
+  box-sizing: border-box;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 40px rgba(192, 173, 107, 0.3);
+  -moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 40px rgba(192, 173, 107, 0.3);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 40px rgba(192, 173, 107, 0.3);
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+/* line 165, ../scss/_sidebar.scss */
+#beta #search:focus {
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.7), inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 0 40px rgba(192, 173, 107, 0.4);
+  -moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.7), inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 0 40px rgba(192, 173, 107, 0.4);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.7), inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 0 40px rgba(192, 173, 107, 0.4);
+}
+/* line 171, ../scss/_sidebar.scss */
+#beta #search-label {
+  background: transparent url(../images/search.png) no-repeat top left;
+  cursor: pointer;
+  display: inline-block;
+  text-indent: -99999px;
+  width: 16px;
+  margin: 0 10px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+/* line 183, ../scss/_sidebar.scss */
+#beta #search-info {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 5px 0;
+  padding-left: 35px;
 }
 
 /* line 3, ../scss/_post.scss */
