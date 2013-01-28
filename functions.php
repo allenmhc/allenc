@@ -19,7 +19,7 @@ function allenc_is_page($page) {
 
 /* Filters */
 function new_excerpt_length($length) {
-	return 50;
+	return 70;
 }
 add_filter('excerpt_length', 'new_excerpt_length');
 
