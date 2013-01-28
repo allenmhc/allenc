@@ -73,8 +73,8 @@
       }
     }
     &:active {
-      padding-top: 2px;
-      margin-bottom: -2px;
+      padding-top: 1px;
+      margin-bottom: -1px;
     }
   }
 }
@@ -89,7 +89,7 @@
     &:active {
       color: rgba($color, 0.6);
       span { color: rgba($color, 0.6); }
-      top: 2px;
+      top: 1px;
     }
   }
 }

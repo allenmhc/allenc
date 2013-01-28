@@ -1210,8 +1210,8 @@ ul.archives-list {
 }
 /* line 75, ../scss/_sidebar.scss */
 #beta .section-title:active {
-  padding-top: 2px;
-  margin-bottom: -2px;
+  padding-top: 1px;
+  margin-bottom: -1px;
 }
 
 /* line 98, ../scss/_sidebar.scss */
@@ -1274,7 +1274,7 @@ ul.archives-list {
 /* line 89, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.twitter:active {
   color: rgba(70, 192, 251, 0.6);
-  top: 2px;
+  top: 1px;
 }
 /* line 91, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.twitter:active span {
@@ -1295,7 +1295,7 @@ ul.archives-list {
 /* line 89, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.googleplus:active {
   color: rgba(221, 75, 57, 0.6);
-  top: 2px;
+  top: 1px;
 }
 /* line 91, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.googleplus:active span {
@@ -1316,7 +1316,7 @@ ul.archives-list {
 /* line 89, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.linkedin:active {
   color: rgba(0, 131, 168, 0.6);
-  top: 2px;
+  top: 1px;
 }
 /* line 91, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.linkedin:active span {
@@ -1337,7 +1337,7 @@ ul.archives-list {
 /* line 89, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.quora:active {
   color: rgba(168, 36, 0, 0.6);
-  top: 2px;
+  top: 1px;
 }
 /* line 91, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.quora:active span {
@@ -1358,7 +1358,7 @@ ul.archives-list {
 /* line 89, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.github:active {
   color: rgba(251, 251, 251, 0.6);
-  top: 2px;
+  top: 1px;
 }
 /* line 91, ../scss/_sidebar.scss */
 #beta .social-list .social-icon a.github:active span {
