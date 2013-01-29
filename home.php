@@ -36,12 +36,12 @@ get_header();
     </ul>
   </section>
 
-  <div class="spine-left spine-content spine-extrude-diagonal">
+  <section class="home-archives">
     <ul class="posts-list archives-list">
       <?php
       rewind_posts();
       $query_args = array(
-        "posts_per_page" => 8
+        "posts_per_page" => 10
       );
       query_posts($query_args);
       while (have_posts()): the_post();
@@ -52,8 +52,7 @@ get_header();
       </li>
       <?php endwhile; ?>
     </ul>
-  </div>
-
+  </section>
 </div>
 
 <div id="beta">

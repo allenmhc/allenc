@@ -1360,6 +1360,55 @@ h1, h2, h3, h4, h5, h6 {
   margin: 8px 0;
 }
 
+/* line 91, ../scss/_home.scss */
+.home-archives .posts-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  position: relative;
+}
+/* line 97, ../scss/_home.scss */
+.home-archives .posts-list:before {
+  position: absolute;
+  top: -10%;
+  left: 90px;
+  width: 1px;
+  height: 120%;
+  display: block;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(133, 159, 184, 0)), color-stop(20%, rgba(133, 159, 184, 0.3)), color-stop(80%, rgba(133, 159, 184, 0.3)), color-stop(100%, rgba(133, 159, 184, 0)));
+  background: -webkit-linear-gradient(rgba(133, 159, 184, 0) 0%, rgba(133, 159, 184, 0.3) 20%, rgba(133, 159, 184, 0.3) 80%, rgba(133, 159, 184, 0) 100%);
+  background: -moz-linear-gradient(rgba(133, 159, 184, 0) 0%, rgba(133, 159, 184, 0.3) 20%, rgba(133, 159, 184, 0.3) 80%, rgba(133, 159, 184, 0) 100%);
+  background: -o-linear-gradient(rgba(133, 159, 184, 0) 0%, rgba(133, 159, 184, 0.3) 20%, rgba(133, 159, 184, 0.3) 80%, rgba(133, 159, 184, 0) 100%);
+  background: linear-gradient(rgba(133, 159, 184, 0) 0%, rgba(133, 159, 184, 0.3) 20%, rgba(133, 159, 184, 0.3) 80%, rgba(133, 159, 184, 0) 100%);
+  content: "";
+}
+/* line 109, ../scss/_home.scss */
+.home-archives .post-line-outer {
+  padding: 10px 0 15px;
+}
+/* line 113, ../scss/_home.scss */
+.home-archives .archive-date {
+  font-size: 12px;
+  font-family: Inconsolata, "Andale Mono", "Courier New", "Courier", monospace;
+  display: inline-block;
+  color: rgba(192, 173, 107, 0.6);
+  padding-right: 27px;
+  margin-right: 27px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+/* line 123, ../scss/_home.scss */
+.home-archives a.post-line {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  width: 410px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 /* line 3, ../scss/_post.scss */
 .post {
   color: white;
