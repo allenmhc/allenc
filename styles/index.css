@@ -1364,7 +1364,7 @@ h1, h2, h3, h4, h5, h6 {
 .home-archives .posts-list {
   list-style: none;
   padding: 0;
-  margin: 20px 0 0;
+  margin: 20px 0;
   position: relative;
 }
 /* line 97, ../scss/_home.scss */
@@ -1375,18 +1375,51 @@ h1, h2, h3, h4, h5, h6 {
   width: 1px;
   height: 120%;
   display: block;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(133, 159, 184, 0)), color-stop(20%, rgba(133, 159, 184, 0.3)), color-stop(80%, rgba(133, 159, 184, 0.3)), color-stop(100%, rgba(133, 159, 184, 0)));
-  background: -webkit-linear-gradient(rgba(133, 159, 184, 0) 0%, rgba(133, 159, 184, 0.3) 20%, rgba(133, 159, 184, 0.3) 80%, rgba(133, 159, 184, 0) 100%);
-  background: -moz-linear-gradient(rgba(133, 159, 184, 0) 0%, rgba(133, 159, 184, 0.3) 20%, rgba(133, 159, 184, 0.3) 80%, rgba(133, 159, 184, 0) 100%);
-  background: -o-linear-gradient(rgba(133, 159, 184, 0) 0%, rgba(133, 159, 184, 0.3) 20%, rgba(133, 159, 184, 0.3) 80%, rgba(133, 159, 184, 0) 100%);
-  background: linear-gradient(rgba(133, 159, 184, 0) 0%, rgba(133, 159, 184, 0.3) 20%, rgba(133, 159, 184, 0.3) 80%, rgba(133, 159, 184, 0) 100%);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(133, 159, 184, 0)), color-stop(10%, rgba(133, 159, 184, 0.3)), color-stop(90%, rgba(133, 159, 184, 0.3)), color-stop(100%, rgba(133, 159, 184, 0)));
+  background: -webkit-linear-gradient(rgba(133, 159, 184, 0) 0%, rgba(133, 159, 184, 0.3) 10%, rgba(133, 159, 184, 0.3) 90%, rgba(133, 159, 184, 0) 100%);
+  background: -moz-linear-gradient(rgba(133, 159, 184, 0) 0%, rgba(133, 159, 184, 0.3) 10%, rgba(133, 159, 184, 0.3) 90%, rgba(133, 159, 184, 0) 100%);
+  background: -o-linear-gradient(rgba(133, 159, 184, 0) 0%, rgba(133, 159, 184, 0.3) 10%, rgba(133, 159, 184, 0.3) 90%, rgba(133, 159, 184, 0) 100%);
+  background: linear-gradient(rgba(133, 159, 184, 0) 0%, rgba(133, 159, 184, 0.3) 10%, rgba(133, 159, 184, 0.3) 90%, rgba(133, 159, 184, 0) 100%);
   content: "";
 }
 /* line 109, ../scss/_home.scss */
-.home-archives .post-line-outer {
+.home-archives a.post-line {
   padding: 10px 0 15px;
+  text-decoration: none;
+  display: block;
+  position: relative;
 }
-/* line 113, ../scss/_home.scss */
+/* line 115, ../scss/_home.scss */
+.home-archives a.post-line:hover:before {
+  content: "";
+}
+/* line 119, ../scss/_home.scss */
+.home-archives a.post-line:active {
+  margin-top: 1px;
+  margin-bottom: -1px;
+}
+/* line 122, ../scss/_home.scss */
+.home-archives a.post-line:active:before {
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  -moz-box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+/* line 126, ../scss/_home.scss */
+.home-archives a.post-line:before {
+  content: none;
+  position: absolute;
+  top: 15px;
+  left: 86px;
+  width: 9px;
+  height: 9px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #282f38;
+}
+/* line 138, ../scss/_home.scss */
 .home-archives .archive-date {
   font-size: 12px;
   font-family: Inconsolata, "Andale Mono", "Courier New", "Courier", monospace;
@@ -1396,17 +1429,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 27px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
-/* line 123, ../scss/_home.scss */
-.home-archives a.post-line {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 400;
+/* line 148, ../scss/_home.scss */
+.home-archives .post-title {
+  width: 410px;
   letter-spacing: 1px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
-  display: inline-block;
-  width: 410px;
   overflow: hidden;
   white-space: nowrap;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  display: inline-block;
 }
 
 /* line 3, ../scss/_post.scss */

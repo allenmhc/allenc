@@ -47,8 +47,10 @@ get_header();
       while (have_posts()): the_post();
       ?>
       <li class="post-line-outer">
-        <div class="post-date archive-date"><?php the_time("Y.m.d"); ?></div>
-        <a href="<?php the_permalink(); ?>" class="post-line"><?php the_title(); ?></a>
+        <a href="<?php the_permalink(); ?>" class="post-line">
+          <div class="post-date archive-date"><?php the_time("Y.m.d"); ?></div>
+          <span class="post-title archive-title"><?php the_title(); ?></span>
+        </a>
       </li>
       <?php endwhile; ?>
     </ul>
