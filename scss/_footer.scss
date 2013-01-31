@@ -1,1 +1,47 @@
+// Footer styles.
+
+#site-footer {
+  @include background(linear-gradient(rgba($color-prim, 0.4) 0%, rgba($color-prim, 0.2) 100%));
+  @include box-shadow(0 0px 5px white(0.3));
+  @include textured-bg("bg-darkdots", 0.6);
+
+  border-top: 1px solid black(0.3);
+}
+
+#rss {
+  text-decoration: none;
+  color: white(0.8);
+  @include letterpress-black(0.4);
+  &:before {
+    font: 110%/1.35 zocial;
+    font-style: normal;
+    font-weight: normal;
+    content: "R";
+  }
+
+  span {
+    position: relative;
+    left: 0;
+    @include opacity(0);
+    @include transition-property(opacity left);
+    @include transition-duration(0.2s, 0.2s);
+    @include transition-timing-function(linear, linear);
+  }
+  &:hover {
+    span {
+      left: 40px;
+      @include opacity(1);
+    }
+  }
+  &:active {
+    color: rgba($color-rss, 0.8);
+    @include letterpress(0.4);
+  }
+}
+
+#site-footer {
+  #rss, .copyright, .render-time {
+    padding-left: 50px;
+  }
+}
 

@@ -6,14 +6,15 @@ body {
 #site-header {
   width: 100%;
   height: 80px;
-
-  .centered-header {
-    margin: 0 auto;
-    width: $site-width;
-    position: relative;
+  .centered-section {
     padding: 20px 0;
   }
+}
 
+.centered-section {
+  margin: 0 auto;
+  width: $site-width;
+  position: relative;
 }
 
 #site-title-link {
@@ -26,15 +27,27 @@ body {
   margin: 0 auto;
 }
 
-#alpha {
+#alpha, #footer-alpha {
   width: $alpha-width - 70px;
   float: left;
   padding-right: 70px;
+}
+
+#alpha {
   min-height: 500px;
 }
 
-#beta {
+#beta, #footer-beta {
   width: $site-width - $alpha-width;
   float: right;
 }
 
+#site-footer {
+  width: 100%;
+  margin-top: 45px;
+  padding-top: 20px;
+  .centered-section {
+    @include clearfix;
+    min-height: 100px;
+  }
+}

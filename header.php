@@ -5,6 +5,10 @@
  */
 ?><!DOCTYPE html>
 
+<?php
+  global $render_time_start;
+  $render_time_start = microtime(true);
+?>
 <html <?php language_attributes(); ?>>
 <head>
   <meta charset="<?php bloginfo('charset'); ?>" />
@@ -47,7 +51,7 @@
   </script>
 
   <header id="site-header">
-    <div class="centered-header">
+    <div class="centered-section">
       <a id="site-title-link" href="<?php echo get_home_url(); ?>">
         <hgroup id="site-title">
           <h1 class="name"><?php bloginfo("name"); ?></h1>
@@ -55,8 +59,6 @@
           <h3 class="description"><?php bloginfo("description"); ?></h3>
         </hgroup>
       </a>
-
-      <a id="rss" href="<?php bloginfo('rss2_url'); ?>"><span>RSS</span></a>
     </div>
   </header>
 
