@@ -33,6 +33,7 @@
     wp_footer();
   ?>
 
+  <script src="<?php echo get_bloginfo('template_directory'); ?>/scripts/twitter.js"></script>
 </body>
 
 </html>
