@@ -43,5 +43,21 @@
   #rss, .copyright, .render-time {
     padding-left: 50px;
   }
+
+  .copyright {
+    @include text-shadow(0 1px 2px black(0.5));
+    font-size: 14px;
+    font-weight: 300;
+    color: white(0.7);
+    letter-spacing: 1px;
+    margin: 60px 0 0;
+  }
+
+  .render-time {
+    @include text-shadow(0 1px 2px black(0.5));
+    font-size: 13px;
+    color: rgba($color-sec, 0.6);
+    margin: 10px 0;
+  }
 }
 

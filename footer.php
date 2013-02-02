@@ -11,7 +11,7 @@
         </a>
 
         <p class="copyright">
-          <span>Copyright &copy;&nbsp;<?php
+          <span>copyright &copy;&nbsp;<?php
             $start_year = 2011;
             $curr_year = date('Y');
             echo $start_year . ($start_year == $curr_year ? '' : ' - ' . $curr_year);
