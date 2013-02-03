@@ -61,6 +61,11 @@
       display: inline-block;
       width: (430px - 40px)/ 2;
       margin-left: 20px;
+      text-decoration: none;
+      &:active {
+        margin-top: 1px;
+      }
+
       aside {
         font-size: 12px;
         color: rgba($color-sec, 0.8);

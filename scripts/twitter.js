@@ -11,8 +11,7 @@
     return $.getJSON(url, function(data) {
       var isProfileSet;
       data.results.forEach(function(tweet) {
-        console.log(tweet);
-        return tweets.push(new Tweet(tweet.from_user_id, tweet.profile_image_url, tweet.created_at, tweet.text));
+        return tweets.push(new Tweet(tweet.id_str, tweet.profile_image_url, tweet.created_at, tweet.text));
       });
       isProfileSet = false;
       return tweets.forEach(function(tweet) {
@@ -25,18 +24,21 @@
     });
   });
   Tweet = (function() {
-    function Tweet(userId, imageUrl, dateStr, text) {
-      this.userId = userId;
+    function Tweet(tweetId, imageUrl, dateStr, text) {
+      this.tweetId = tweetId;
       this.imageUrl = imageUrl;
       this.dateStr = dateStr;
       this.text = text;
       this.now = moment();
     }
     Tweet.prototype.toHtml = function() {
-      return "<div class=\"tweet\">\n  <aside>" + (this.relativeDate()) + "</aside>\n  <p>" + this.text + "</p>\n</div>";
+      return "<a class=\"tweet\" target=\"_blank\" href=\"" + (this.tweetUrl()) + "\">\n  <aside>" + (this.relativeDate()) + "</aside>\n  <p>" + this.text + "</p>\n</a>";
     };
     Tweet.prototype.relativeDate = function() {
       return moment(this.dateStr).from(this.now);
+    };
+    Tweet.prototype.tweetUrl = function() {
+      return "http://twitter.com/allenmhc/status/" + this.tweetId;
     };
     return Tweet;
   })();

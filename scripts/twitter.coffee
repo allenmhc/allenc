@@ -8,8 +8,7 @@ $(document).ready ->
 
   $.getJSON(url, (data) ->
     data.results.forEach (tweet) ->
-      console.log tweet
-      tweets.push new Tweet(tweet.from_user_id, tweet.profile_image_url, tweet.created_at, tweet.text)
+      tweets.push new Tweet(tweet.id_str, tweet.profile_image_url, tweet.created_at, tweet.text)
 
     isProfileSet = false
     tweets.forEach (tweet) ->
@@ -20,16 +19,19 @@ $(document).ready ->
   )
 
 class Tweet
-  constructor: (@userId, @imageUrl, @dateStr, @text) ->
+  constructor: (@tweetId, @imageUrl, @dateStr, @text) ->
     @now = moment()
 
   toHtml: ->
     """
-    <div class="tweet">
+    <a class="tweet" target="_blank" href="#{@tweetUrl()}">
       <aside>#{@relativeDate()}</aside>
       <p>#{@text}</p>
-    </div>
+    </a>
     """
 
   relativeDate: ->
     moment(@dateStr).from @now
+
+  tweetUrl: ->
+    "http://twitter.com/allenmhc/status/#{@tweetId}"
