@@ -1,5 +1,5 @@
 <?php
-/* Home template */
+/* Articles template */
 define('WP_USE_THEMES', false);
 global $wp_query;
 ?>
@@ -15,14 +15,13 @@ get_header();
       rewind_posts();
       $query_args = array(
         "meta_key" => "article",
-        "meta_value" => 1,
-        "posts_per_page" => 3
+        "meta_value" => 1
       );
       query_posts($query_args);
-      $i = 0;
+      $i = 1;
       while (have_posts()): the_post();
       ?>
-      <li class="post-box-outer <?php echo "post-box-${i}"; ?>">
+      <li class="post-box-outer <?php echo "post-box-" . (($i % 2 == 0) ? "even" : "odd"); ?>">
         <a href="<?php the_permalink(); ?>" class="post-box article-box">
           <div class="post-box-inner">
             <h4 class="post-title article-title"><?php the_title(); ?></h4>
@@ -32,26 +31,6 @@ get_header();
         </a>
       </li>
       <?php $i++; ?>
-      <?php endwhile; ?>
-    </ul>
-  </section>
-
-  <section class="archives">
-    <ul class="posts-list archives-list">
-      <?php
-      rewind_posts();
-      $query_args = array(
-        "posts_per_page" => 10
-      );
-      query_posts($query_args);
-      while (have_posts()): the_post();
-      ?>
-      <li class="post-line-outer">
-        <a href="<?php the_permalink(); ?>" class="post-line">
-          <div class="post-date archive-date"><?php the_time("Y.m.d"); ?></div>
-          <span class="post-title archive-title"><?php the_title(); ?></span>
-        </a>
-      </li>
       <?php endwhile; ?>
     </ul>
   </section>

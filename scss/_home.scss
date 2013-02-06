@@ -1,6 +1,6 @@
 // Home page styles.
 
-.home-articles {
+.articles {
   margin-top: 45px;
 
   $post-width: $alpha-width - 70px;
@@ -21,8 +21,8 @@
       box-sizing: border-box;
 
       &.post-box-0 { width: $post-width; }
-      &.post-box-1, &.post-box-2 { width: ($post-width / 2) - 10px; }
-      &.post-box-1 { margin-right: 20px; }
+      &.post-box-1, &.post-box-2, &.post-box-odd, &.post-box-even { width: ($post-width / 2) - 10px; }
+      &.post-box-1, &.post-box-odd { margin-right: 20px; }
     }
 
     a.post-box {
@@ -87,7 +87,7 @@
   }
 }
 
-.home-archives {
+.archives {
   .posts-list {
     list-style: none;
     padding: 0;
