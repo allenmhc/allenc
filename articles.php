@@ -13,13 +13,16 @@ get_header();
     <ul class="posts-list articles-list">
       <?php
       rewind_posts();
+      $temp_query = clone $wp_query;
       $query_args = array(
         "meta_key" => "article",
-        "meta_value" => 1
+        "meta_value" => 1,
+        "posts_per_page" => -1
       );
-      query_posts($query_args);
+      $wp_query = null;
+      $wp_query = new WP_Query($query_args);
       $i = 1;
-      while (have_posts()): the_post();
+      while ($wp_query->have_posts()): $wp_query->the_post();
       ?>
       <li class="post-box-outer <?php echo "post-box-" . (($i % 2 == 0) ? "even" : "odd"); ?>">
         <a href="<?php the_permalink(); ?>" class="post-box article-box">
@@ -30,8 +33,12 @@ get_header();
           </div>
         </a>
       </li>
-      <?php $i++; ?>
-      <?php endwhile; ?>
+      <?php
+        $i++;
+        endwhile;
+        $wp_query = clone $temp_query;
+        wp_reset_query();
+      ?>
     </ul>
   </section>
 </div>
