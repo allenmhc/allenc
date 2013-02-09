@@ -11,13 +11,29 @@ get_header();
 ?>
 
 <?php
+function bookend_year($is_first) {
+  $d = allenc_get_bookend_post_date($is_first, false);
+  return date('Y', strtotime($d));
+}
+
+$num_years_to_show = 4;
 $current_year = date('Y');
 $articles_year = get_query_var('articlesyear') ? get_query_var('articlesyear') : $current_year;
+
+$bookend_start = bookend_year(false);
+$bookend_end = bookend_year(true);
+$start_year = min($bookend_start, $articles_year + floor($num_years_to_show / 2));
+$end_year = max($bookend_end, $start_year - $num_years_to_show + 1);
+if ($start_year-$end_year+1 < $num_years_to_show && $bookend_start > $start_year) { $start_year += 1; }
 ?>
 <div id="alpha">
   <section class="articles">
     <ul class="year-navigator">
-      <h2 class="title-year"><?php echo $articles_year; ?></h2>
+      <?php for ($i = $start_year; $i >= $end_year; $i--): ?>
+      <li class="year">
+        <a href="<?php echo get_bloginfo('url') . '/articles/' . $i; ?>" class="title-year"><?php echo $i; ?></h2>
+      </li>
+      <?php endfor ?>
     </ul>
 
     <ul class="posts-list articles-list">

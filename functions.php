@@ -17,6 +17,21 @@ function allenc_is_page($page) {
   }
 }
 
+function allenc_get_bookend_post_date($is_first, $is_article) {
+  $query_args = array(
+    'numberposts' => 1,
+    'post_status' => 'publish',
+    "orderby" => "date"
+  );
+  $query_args['order'] = ($is_first ? 'ASC' : 'DESC');
+  if ($is_article) {
+    $query_args["meta_key"] = "article";
+    $query_args["meta_value"] = 1;
+  }
+  $post = get_posts($query_args);
+  return $post[0]->post_date;
+}
+
 /* Filters */
 function new_excerpt_length($length) {
 	return 70;
