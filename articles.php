@@ -1,5 +1,7 @@
 <?php
-/* Articles template */
+/*
+Template Name: Articles
+*/
 define('WP_USE_THEMES', false);
 global $wp_query;
 ?>
@@ -8,8 +10,16 @@ global $wp_query;
 get_header();
 ?>
 
+<?php
+$current_year = date('Y');
+$articles_year = get_query_var('articlesyear') ? get_query_var('articlesyear') : $current_year;
+?>
 <div id="alpha">
   <section class="articles">
+    <ul class="year-navigator">
+      <h2 class="title-year"><?php echo $articles_year; ?></h2>
+    </ul>
+
     <ul class="posts-list articles-list">
       <?php
       rewind_posts();
@@ -17,7 +27,10 @@ get_header();
       $query_args = array(
         "meta_key" => "article",
         "meta_value" => 1,
-        "posts_per_page" => -1
+        "posts_per_page" => -1,
+        "orderby" => "date",
+        "order" => "DESC",
+        "year" => $articles_year
       );
       $wp_query = null;
       $wp_query = new WP_Query($query_args);

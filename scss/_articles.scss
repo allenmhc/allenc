@@ -1,0 +1,15 @@
+// Article page styles.
+
+.articles {
+  .year-navigator {
+  }
+
+  .title-year {
+    text-align: right;
+    font-family: $font-titles;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: white(0.7);
+  }
+}

@@ -27,4 +27,20 @@ function new_excerpt_more($more) {
 	return '';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+/* Rewrite rules */
+add_action('init', 'allenc_add_rewrite_rules');
+add_action('init', 'allenc_add_rewrite_tags');
+
+function allenc_add_rewrite_rules() {
+  add_rewrite_rule(
+    '^articles/([0-9]{4})/?$',
+    'index.php?pagename=articles&articlesyear=$matches[1]',
+    'top'
+  );
+}
+
+function allenc_add_rewrite_tags() {
+  add_rewrite_tag('%articlesyear%', '([0-9]{4})');
+}
 ?>
