@@ -3,20 +3,39 @@
 .articles {
   .year-navigator {
     list-style: none;
-    margin: 0 0 50px;
-    padding: 0;
+    margin: 0;
+    padding: 0 0 50px;
+    position: relative;
     @include clearfix();
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 38px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      @include background(linear-gradient(left, white(0.6) 0%, white(0.6) 60%, white(0.0) 80%));
+    }
   }
 
   .year {
     float: left;
-    margin-right: 40px;
+    margin-right: 60px;
+    position: relative;
+    top: 0;
+    &:hover, &:active {
+    }
+    &:active {
+      top: 1px;
+    }
   }
 
   .title-year {
     font-family: $font-titles;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 2px;
     color: white(0.7);
     text-decoration: none;

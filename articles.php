@@ -31,7 +31,7 @@ if ($start_year-$end_year+1 < $num_years_to_show && $bookend_start > $start_year
     <ul class="year-navigator">
       <?php for ($i = $start_year; $i >= $end_year; $i--): ?>
       <li class="year">
-        <a href="<?php echo get_bloginfo('url') . '/articles/' . $i; ?>" class="title-year"><?php echo $i; ?></h2>
+        <a href="<?php echo get_bloginfo('url') . '/articles/' . $i; ?>" class="title-year"><?php echo $i; ?></a>
       </li>
       <?php endfor ?>
     </ul>
