@@ -536,7 +536,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 45, ../scss/_layout.scss */
 #site-footer {
   width: 100%;
-  margin-top: 45px;
+  margin-top: 65px;
   padding-top: 20px;
 }
 /* line 49, ../scss/_layout.scss */
@@ -1600,42 +1600,64 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
-/* line 4, ../scss/_articles.scss */
+/* line 5, ../scss/_articles.scss */
 .articles .year-navigator {
   list-style: none;
   margin: 0;
-  padding: 0 0 50px;
+  padding: 5px 0 60px;
   position: relative;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 11, ../scss/_articles.scss */
+/* line 12, ../scss/_articles.scss */
 .articles .year-navigator:after {
   content: "";
   display: block;
   position: absolute;
   top: 38px;
-  left: 0;
+  left: 25px;
   width: 100%;
   height: 1px;
-  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(255, 255, 255, 0.6)), color-stop(60%, rgba(255, 255, 255, 0.6)), color-stop(80%, rgba(255, 255, 255, 0)));
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0) 80%);
-  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0) 80%);
-  background: -o-linear-gradient(left, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0) 80%);
-  background: linear-gradient(left, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0) 80%);
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(255, 122, 13, 0.3)), color-stop(60%, rgba(255, 122, 13, 0.3)), color-stop(90%, rgba(166, 75, 0, 0)));
+  background: -webkit-linear-gradient(left, rgba(255, 122, 13, 0.3) 0%, rgba(255, 122, 13, 0.3) 60%, rgba(166, 75, 0, 0) 90%);
+  background: -moz-linear-gradient(left, rgba(255, 122, 13, 0.3) 0%, rgba(255, 122, 13, 0.3) 60%, rgba(166, 75, 0, 0) 90%);
+  background: -o-linear-gradient(left, rgba(255, 122, 13, 0.3) 0%, rgba(255, 122, 13, 0.3) 60%, rgba(166, 75, 0, 0) 90%);
+  background: linear-gradient(left, rgba(255, 122, 13, 0.3) 0%, rgba(255, 122, 13, 0.3) 60%, rgba(166, 75, 0, 0) 90%);
+  -webkit-box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
 }
-/* line 23, ../scss/_articles.scss */
+/* line 25, ../scss/_articles.scss */
 .articles .year {
   float: left;
   margin-right: 60px;
   position: relative;
   top: 0;
 }
-/* line 30, ../scss/_articles.scss */
+/* line 32, ../scss/_articles.scss */
 .articles .year:active {
   top: 1px;
 }
-/* line 35, ../scss/_articles.scss */
+/* line 36, ../scss/_articles.scss */
+.articles .year:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 31px;
+  left: 22px;
+  width: 5px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 5px #a64b00;
+  -moz-box-shadow: 0 0 5px #a64b00;
+  box-shadow: 0 0 5px #a64b00;
+}
+/* line 50, ../scss/_articles.scss */
 .articles .title-year {
   font-family: "Lato", Arial, sans-serif;
   font-weight: 300;

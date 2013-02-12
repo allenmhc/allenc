@@ -22,6 +22,9 @@ $articles_year = get_query_var('articlesyear') ? get_query_var('articlesyear') :
 
 $bookend_start = bookend_year(false);
 $bookend_end = bookend_year(true);
+if ($articles_year < $bookend_end) { $articles_year = $bookend_end; }
+if ($articles_year > $bookend_start) { $articles_year = $bookend_start; }
+
 $start_year = min($bookend_start, $articles_year + floor($num_years_to_show / 2));
 $end_year = max($bookend_end, $start_year - $num_years_to_show + 1);
 if ($start_year-$end_year+1 < $num_years_to_show && $bookend_start > $start_year) { $start_year += 1; }
