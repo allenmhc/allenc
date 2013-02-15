@@ -1,0 +1,56 @@
+// Archives page styles.
+
+$archive-height: 105px;
+$gradient-color: rgba(lighten($color-archives, 20%), 0.3);
+
+.archives {
+  .histogram {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: $archive-height;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: $archive-height + 10px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      @include background(linear-gradient(left, $gradient-color 0%, $gradient-color 60%, rgba($color-archives, 0.0) 90%));
+      @include box-shadow(0 0 3px white(0.2));
+    }
+
+    .year {
+      display: inline-block;
+      height: 100%;
+      margin-right: 15px;
+      .year-inner {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .month {
+      display: inline-block;
+      position: relative;
+      height: $archive-height;
+      width: 7px;
+    }
+
+    .histogram-bubble {
+      @include border-radius(3px);
+      position: absolute;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      display: block;
+      background-color: white(0.7);
+    }
+  }
+
+}

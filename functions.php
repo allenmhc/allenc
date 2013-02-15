@@ -53,9 +53,15 @@ function allenc_add_rewrite_rules() {
     'index.php?pagename=articles&articlesyear=$matches[1]',
     'top'
   );
+  add_rewrite_rule(
+    '^archives/([0-9]{4})/?$',
+    'index.php?pagename=archives&archivesyear=$matches[1]',
+    'top'
+  );
 }
 
 function allenc_add_rewrite_tags() {
+  add_rewrite_tag('%articlesyear%', '([0-9]{4})');
   add_rewrite_tag('%articlesyear%', '([0-9]{4})');
 }
 ?>
