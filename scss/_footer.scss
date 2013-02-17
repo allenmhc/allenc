@@ -31,6 +31,7 @@
     @include border-radius(5px);
     @include box-emboss(0.7, 0.7);
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
     background-color: white(0.1);
     border: 1px solid rgba($color-ter, 0.4);
     margin-top: 15px;

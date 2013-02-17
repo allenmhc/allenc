@@ -19,6 +19,7 @@
       float: left;
       margin-bottom: 20px;
       box-sizing: border-box;
+      -moz-box-sizing: border-box;
 
       &.post-box-0 { width: $post-width; }
       &.post-box-1, &.post-box-2, &.post-box-odd, &.post-box-even { width: ($post-width / 2) - 10px; }
@@ -33,6 +34,7 @@
       height: $post-height;
       overflow: hidden;
       box-sizing: border-box;
+      -moz-box-sizing: border-box;
 
       &:hover, &:active {
         .post-separator {
@@ -142,6 +144,8 @@
     color: rgba($color-sec, 0.6);
     padding-right: 27px;
     margin-right: 27px;
+    margin-top: 3px;
+    vertical-align: top;
     @include letterpress(0.3);
   }
 

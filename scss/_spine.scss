@@ -101,6 +101,7 @@ $spine-padding: 60px;
 
   .spine-marker {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
     position: absolute;
     top: 5px;
     left: -6px;
