@@ -55,17 +55,20 @@ if ($archives_year > $bookend_start) { $archives_year = $bookend_start; }
       ?>
       <?php foreach ($histogram as $year => $histogram_year): ?>
       <li class="year">
-        <ul class="year-inner">
-          <?php foreach ($histogram_year as $month => $histogram_month): ?>
-          <li class="month" data-year="<?php echo $year; ?>"
-                            data-month="<?php echo $month; ?>"
-                            data-posts="<?php echo count($histogram_month); ?>">
-            <?php for ($i = count($histogram_month)-1; $i >= 0; $i--): ?>
-            <div class="histogram-bubble" style="bottom: <?php echo 7*$i;?>px"></div>
-            <?php endfor; ?>
-          </li>
-          <?php endforeach; ?>
-        </ul>
+        <a class="archive-link" href="<?php echo get_bloginfo('url') . "/archives/$year/"; ?>">
+          <ul class="year-inner">
+            <?php foreach ($histogram_year as $month => $histogram_month): ?>
+            <li class="month" data-year="<?php echo $year; ?>"
+                              data-month="<?php echo $month; ?>"
+                              data-posts="<?php echo count($histogram_month); ?>">
+              <?php for ($i = count($histogram_month)-1; $i >= 0; $i--): ?>
+              <div class="histogram-bubble" style="bottom: <?php echo 7*$i;?>px"></div>
+              <?php endfor; ?>
+            </li>
+            <?php endforeach; ?>
+          </ul>
+          <div class="title"><?php echo $year; ?></div>
+        </a>
       </li>
       <?php endforeach; ?>
       <?php wp_reset_query(); ?>

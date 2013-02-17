@@ -1695,25 +1695,47 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
 }
 /* line 27, ../scss/_archives.scss */
+.archives .histogram .archive-link {
+  text-decoration: none;
+  display: block;
+  padding: 0 5px 10px;
+}
+/* line 32, ../scss/_archives.scss */
+.archives .histogram .archive-link:hover, .archives .histogram .archive-link:active {
+  background-color: rgba(0, 99, 99, 0.4);
+}
+/* line 35, ../scss/_archives.scss */
+.archives .histogram .archive-link:active {
+  margin: 1px 0 -1px;
+}
+/* line 40, ../scss/_archives.scss */
 .archives .histogram .year {
   display: inline-block;
   height: 100%;
-  margin-right: 15px;
+  margin-right: 5px;
 }
-/* line 31, ../scss/_archives.scss */
+/* line 44, ../scss/_archives.scss */
 .archives .histogram .year .year-inner {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 38, ../scss/_archives.scss */
+/* line 49, ../scss/_archives.scss */
+.archives .histogram .year .title {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  text-align: center;
+}
+/* line 58, ../scss/_archives.scss */
 .archives .histogram .month {
   display: inline-block;
   position: relative;
   height: 105px;
-  width: 7px;
+  width: 5px;
 }
-/* line 45, ../scss/_archives.scss */
+/* line 65, ../scss/_archives.scss */
 .archives .histogram .histogram-bubble {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;

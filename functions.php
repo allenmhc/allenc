@@ -62,6 +62,6 @@ function allenc_add_rewrite_rules() {
 
 function allenc_add_rewrite_tags() {
   add_rewrite_tag('%articlesyear%', '([0-9]{4})');
-  add_rewrite_tag('%articlesyear%', '([0-9]{4})');
+  add_rewrite_tag('%archivesyear%', '([0-9]{4})');
 }
 ?>
