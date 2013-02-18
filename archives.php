@@ -25,7 +25,7 @@ function filter_by_year($where = '') {
 }
 
 $current_year = date('Y');
-$archives_year = get_query_var('archivesyear') ? get_query_var('archivesyear') : $current_year;
+$archives_year = intval(get_query_var('archivesyear') ? get_query_var('archivesyear') : $current_year);
 
 $bookend_start = bookend_year(false);
 $bookend_end = bookend_year(true);
@@ -33,26 +33,26 @@ if ($archives_year < $bookend_end) { $archives_year = $bookend_end; }
 if ($archives_year > $bookend_start) { $archives_year = $bookend_start; }
 ?>
 <div id="alpha">
+  <?php
+  add_filter('posts_where', 'filter_by_year');
+  $posts = get_posts(array(
+    'suppress_filters' => false,
+    'posts_per_page' => -1
+  ));
+  remove_filter('posts_where', 'filter_by_year');
+
+  $histogram = array();
+  foreach ($posts as $post) {
+    list($year, $month) = explode("-", date('Y-n', strtotime($post->post_date)));
+    if (!isset($histogram[$year])) {
+      $histogram[$year] = array();
+      for ($i = 12; $i > 0; $i--) { $histogram[$year][strval($i)] = array(); }
+    }
+    $histogram[$year][$month][] = $post;
+  }
+  ?>
   <section class="archives">
     <ul class="histogram">
-      <?php
-      add_filter('posts_where', 'filter_by_year');
-      $posts = get_posts(array(
-        'suppress_filters' => false,
-        'posts_per_page' => -1
-      ));
-      remove_filter('posts_where', 'filter_by_year');
-
-      $histogram = array();
-      foreach ($posts as $post) {
-        list($year, $month) = explode("-", date('Y-n', strtotime($post->post_date)));
-        if (!isset($histogram[$year])) {
-          $histogram[$year] = array();
-          for ($i = 12; $i > 0; $i--) { $histogram[$year][strval($i)] = array(); }
-        }
-        $histogram[$year][$month][] = $post->post_title;
-      }
-      ?>
       <?php foreach ($histogram as $year => $histogram_year): ?>
       <li class="year">
         <a class="archive-link" href="<?php echo get_bloginfo('url') . "/archives/$year/"; ?>">
@@ -71,9 +71,25 @@ if ($archives_year > $bookend_start) { $archives_year = $bookend_start; }
         </a>
       </li>
       <?php endforeach; ?>
-      <?php wp_reset_query(); ?>
     </ul>
+
+    <?php foreach ($histogram[strval($archives_year)] as $month): ?>
+    <?php if (count($month) > 0): ?>
+      <ul class="posts-list archives-list">
+        <?php foreach ($month as $post): ?>
+        <li class="post-line-outer">
+          <a href="<?php echo get_permalink($post->ID); ?>" class="post-line">
+            <div class="post-date archive-date"><?php echo date("Y.m.d", strtotime($post->post_date)); ?></div>
+            <span class="post-title archive-title"><?php echo $post->post_title; ?></span>
+          </a>
+        </li>
+        <?php endforeach; ?>
+      </ul>
+    <?php endif; ?>
+    <?php endforeach; ?>
   </section>
+
+  <?php wp_reset_query(); ?>
 </div>
 
 <div id="beta">
