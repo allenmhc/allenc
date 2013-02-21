@@ -1767,6 +1767,71 @@ h1, h2, h3, h4, h5, h6 {
   top: 5%;
 }
 
+/* line 5, ../scss/_about.scss */
+.about-fullsize {
+  margin-top: 50px;
+  background: url(../images/about.jpg) no-repeat top left;
+  width: 600px;
+  min-height: 500px;
+  position: relative;
+}
+/* line 12, ../scss/_about.scss */
+.about-fullsize .caption {
+  color: rgba(0, 0, 0, 0.9);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 440px;
+  left: 10px;
+}
+/* line 20, ../scss/_about.scss */
+.about-fullsize .intro-paragraph {
+  width: 250px;
+  margin-left: 320px;
+  line-height: 26px;
+  position: relative;
+}
+/* line 25, ../scss/_about.scss */
+.about-fullsize .intro-paragraph p {
+  margin: 40px 0;
+}
+/* line 27, ../scss/_about.scss */
+.about-fullsize .intro-paragraph:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 97px;
+  left: -20px;
+  width: 300px;
+  height: 1px;
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 235, 0, 0.3)), color-stop(70%, rgba(0, 235, 0, 0.3)), color-stop(90%, rgba(0, 133, 0, 0)));
+  background: -webkit-linear-gradient(left, rgba(0, 235, 0, 0.3) 0%, rgba(0, 235, 0, 0.3) 70%, rgba(0, 133, 0, 0) 90%);
+  background: -moz-linear-gradient(left, rgba(0, 235, 0, 0.3) 0%, rgba(0, 235, 0, 0.3) 70%, rgba(0, 133, 0, 0) 90%);
+  background: -o-linear-gradient(left, rgba(0, 235, 0, 0.3) 0%, rgba(0, 235, 0, 0.3) 70%, rgba(0, 133, 0, 0) 90%);
+  background: linear-gradient(left, rgba(0, 235, 0, 0.3) 0%, rgba(0, 235, 0, 0.3) 70%, rgba(0, 133, 0, 0) 90%);
+  -webkit-box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
+}
+/* line 40, ../scss/_about.scss */
+.about-fullsize .five-questions {
+  width: 250px;
+  margin-left: 320px;
+  margin-top: 100px;
+}
+/* line 44, ../scss/_about.scss */
+.about-fullsize .five-questions dt {
+  font-weight: 500;
+  float: left;
+  clear: left;
+  letter-spacing: 1px;
+  width: 80px;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* line 52, ../scss/_about.scss */
+.about-fullsize .five-questions dd {
+  margin: 0 0 30px 80px;
+}
+
 /* line 3, ../scss/_post.scss */
 .post {
   color: white;
