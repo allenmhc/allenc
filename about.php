@@ -19,7 +19,7 @@ get_header();
       <p>I voice my thoughts on this blog and take whimsically bad pictures.</p>
     </div>
 
-    <dl class="five-questions">
+    <dl class="six-questions">
       <dt>who</dt>
       <dd>allen cheung</dd>
 
@@ -34,6 +34,9 @@ get_header();
 
       <dt>why</dt>
       <dd>product &times; design &times; code</dd>
+
+      <dt>how</dt>
+      <dd><a href="#">credits</a></dd>
     </dl>
   </div>
 </div>
