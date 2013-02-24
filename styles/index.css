@@ -1768,39 +1768,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 5, ../scss/_about.scss */
-.about-fullsize {
+.about {
   margin-top: 50px;
-  background: url(../images/about.jpg) no-repeat top left;
   width: 600px;
-  min-height: 500px;
-  position: relative;
 }
-/* line 12, ../scss/_about.scss */
-.about-fullsize .caption {
+/* line 9, ../scss/_about.scss */
+.about .caption {
   color: rgba(0, 0, 0, 0.9);
   text-shadow: 0 1px rgba(255, 255, 255, 0.7);
   position: absolute;
   top: 440px;
   left: 10px;
 }
-/* line 20, ../scss/_about.scss */
-.about-fullsize .intro-paragraph {
-  width: 250px;
-  margin-left: 320px;
+
+/* line 18, ../scss/_about.scss */
+.about-photo {
+  position: relative;
+  width: 300px;
+  float: left;
+}
+
+/* line 24, ../scss/_about.scss */
+.about-text {
+  float: right;
+  width: 230px;
+}
+/* line 28, ../scss/_about.scss */
+.about-text .intro-paragraph {
+  margin-left: 30px;
   line-height: 26px;
   position: relative;
 }
-/* line 25, ../scss/_about.scss */
-.about-fullsize .intro-paragraph p {
-  margin: 40px 0;
+/* line 32, ../scss/_about.scss */
+.about-text .intro-paragraph p {
+  margin: 0 0 40px;
 }
-/* line 27, ../scss/_about.scss */
-.about-fullsize .intro-paragraph:after {
+/* line 34, ../scss/_about.scss */
+.about-text .intro-paragraph:after {
   content: "";
   display: block;
   position: absolute;
   top: 97px;
-  left: -20px;
+  left: -30px;
   width: 300px;
   height: 1px;
   background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 235, 0, 0.3)), color-stop(70%, rgba(0, 235, 0, 0.3)), color-stop(90%, rgba(0, 133, 0, 0)));
@@ -1812,14 +1821,13 @@ h1, h2, h3, h4, h5, h6 {
   -moz-box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
 }
-/* line 40, ../scss/_about.scss */
-.about-fullsize .six-questions {
-  width: 250px;
-  margin-left: 320px;
+/* line 47, ../scss/_about.scss */
+.about-text .six-questions {
+  margin-left: 30px;
   margin-top: 80px;
 }
-/* line 44, ../scss/_about.scss */
-.about-fullsize .six-questions dt {
+/* line 50, ../scss/_about.scss */
+.about-text .six-questions dt {
   font-weight: 500;
   float: left;
   clear: left;
@@ -1827,12 +1835,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 80px;
   color: rgba(255, 255, 255, 0.6);
 }
-/* line 52, ../scss/_about.scss */
-.about-fullsize .six-questions dd {
+/* line 58, ../scss/_about.scss */
+.about-text .six-questions dd {
   margin: 0 0 25px 80px;
 }
-/* line 55, ../scss/_about.scss */
-.about-fullsize .six-questions a {
+/* line 61, ../scss/_about.scss */
+.about-text .six-questions a {
   text-decoration: none;
   color: #eee;
   border-bottom: 1px solid rgba(238, 238, 238, 0.4);

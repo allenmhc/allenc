@@ -10,13 +10,15 @@ global $wp_query;
 get_header();
 ?>
 
-<div id="alpha">
-  <div class="about-fullsize">
-    <p class="caption">Simpler times (2009)</p>
+<section id="alpha" class="about clearfix">
+  <div class="about-photo">
+    <img src="<?php echo get_bloginfo("template_directory"); ?>/images/about.jpg" alt="About me"/>
+  </div>
 
+  <div class="about-text">
     <div class="intro-paragraph">
-      <p>I'm a full stack software engineer who likes clean designs, elegant code, and simple products.</p>
-      <p>I voice my thoughts on this blog and take whimsically bad pictures.</p>
+      <p>I'm a full stack web software engineer currently employed at Square.</p>
+      <p>I like clean designs, elegant code, and simple products. I voice my thoughts on this blog and take whimsically bad pictures.</p>
     </div>
 
     <dl class="six-questions">
@@ -39,11 +41,11 @@ get_header();
       <dd><a href="#">credits</a></dd>
     </dl>
   </div>
-</div>
+</section>
 
-<div id="beta">
+<section id="beta">
   <?php get_sidebar(); ?>
-</div>
+</section>
 
 <?php
 get_footer();
