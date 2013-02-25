@@ -89,7 +89,7 @@
   }
 }
 
-.archives {
+.archives, .search-results {
   .posts-list {
     list-style: none;
     margin: 0;
@@ -150,7 +150,7 @@
   }
 
   .post-title {
-    width: 410px;
+    width: 400px;
     letter-spacing: 1px;
     @include letterpress-black(0.8);
     overflow: hidden;

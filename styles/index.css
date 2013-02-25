@@ -471,8 +471,24 @@ body {
   color: #eee;
   background: black url(../images/bg-waves.jpg) no-repeat fixed center center;
 }
+/* line 21, ../scss/_base.scss */
+body .prose a {
+  color: #eee;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #888888;
+}
+/* line 26, ../scss/_base.scss */
+body .prose a:hover, body .prose a:active {
+  border-bottom-color: #bbbbbb;
+}
+/* line 27, ../scss/_base.scss */
+body .prose a:active {
+  position: relative;
+  top: 1px;
+}
 
-/* line 22, ../scss/_base.scss */
+/* line 31, ../scss/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -1413,7 +1429,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 186, ../scss/_sidebar.scss */
 #beta #search-info {
   color: rgba(255, 255, 255, 0.8);
-  margin: 5px 0;
+  margin: 5px 0 0;
   padding-left: 35px;
 }
 
@@ -1525,14 +1541,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 93, ../scss/_home.scss */
-.archives .posts-list {
+.archives .posts-list, .search-results .posts-list {
   list-style: none;
   margin: 0;
   padding: 20px 0;
   position: relative;
 }
 /* line 99, ../scss/_home.scss */
-.archives .posts-list:before {
+.archives .posts-list:before, .search-results .posts-list:before {
   position: absolute;
   top: -10%;
   left: 90px;
@@ -1547,29 +1563,29 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
 }
 /* line 111, ../scss/_home.scss */
-.archives a.post-line {
+.archives a.post-line, .search-results a.post-line {
   padding: 10px 0 15px;
   text-decoration: none;
   display: block;
   position: relative;
 }
 /* line 117, ../scss/_home.scss */
-.archives a.post-line:hover:before {
+.archives a.post-line:hover:before, .search-results a.post-line:hover:before {
   content: "";
 }
 /* line 121, ../scss/_home.scss */
-.archives a.post-line:active {
+.archives a.post-line:active, .search-results a.post-line:active {
   margin-top: 1px;
   margin-bottom: -1px;
 }
 /* line 124, ../scss/_home.scss */
-.archives a.post-line:active:before {
+.archives a.post-line:active:before, .search-results a.post-line:active:before {
   -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   -moz-box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 /* line 128, ../scss/_home.scss */
-.archives a.post-line:before {
+.archives a.post-line:before, .search-results a.post-line:before {
   content: none;
   position: absolute;
   top: 15px;
@@ -1584,7 +1600,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #282f38;
 }
 /* line 140, ../scss/_home.scss */
-.archives .archive-date {
+.archives .archive-date, .search-results .archive-date {
   font-size: 12px;
   font-family: Inconsolata, "Andale Mono", "Courier New", "Courier", monospace;
   display: inline-block;
@@ -1596,8 +1612,8 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 /* line 152, ../scss/_home.scss */
-.archives .post-title {
-  width: 410px;
+.archives .post-title, .search-results .post-title {
+  width: 400px;
   letter-spacing: 1px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   overflow: hidden;
@@ -2022,6 +2038,60 @@ h1, h2, h3, h4, h5, h6 {
 .linklove {
   display: none;
   visibility: hidden;
+}
+
+/* line 3, ../scss/_search.scss */
+.search-results {
+  margin-top: 45px;
+}
+/* line 6, ../scss/_search.scss */
+.search-results .posts-list {
+  padding-top: 0;
+}
+/* line 8, ../scss/_search.scss */
+.search-results .posts-list:before {
+  height: 100%;
+  top: 0;
+}
+/* line 14, ../scss/_search.scss */
+.search-results .excerpt {
+  color: #999999;
+  padding-left: 118px;
+  overflow: hidden;
+  height: 38px;
+  font-size: 12px;
+}
+/* line 22, ../scss/_search.scss */
+.search-results .pagination-buttons {
+  margin: 20px 0 0 118px;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  color: #555;
+}
+/* line 31, ../scss/_search.scss */
+.search-results .pagination-buttons .pagination-button {
+  text-decoration: none;
+  border-bottom: none;
+  color: rgba(192, 173, 107, 0.5);
+}
+/* line 35, ../scss/_search.scss */
+.search-results .pagination-buttons .pagination-button:hover {
+  color: rgba(192, 173, 107, 0.7);
+}
+/* line 36, ../scss/_search.scss */
+.search-results .pagination-buttons .pagination-button.disabled {
+  color: #666;
+}
+/* line 38, ../scss/_search.scss */
+.search-results .pagination-buttons .prev {
+  padding-right: 5px;
+}
+/* line 41, ../scss/_search.scss */
+.search-results .pagination-buttons .next {
+  padding-left: 5px;
 }
 
 /* line 3, ../scss/_post.scss */
