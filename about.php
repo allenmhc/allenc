@@ -13,7 +13,7 @@ get_header();
 <section id="alpha" class="about clearfix">
   <div class="about-photo">
     <img src="<?php echo get_bloginfo("template_directory"); ?>/images/about.jpg" alt="About me"/>
-    <section class="message-me show-message-me">
+    <section class="message-me">
       <h2>contact me</h2>
       <div class="contact-form">
         <?php insert_cform("Contact me"); ?>

@@ -97,7 +97,7 @@ $about-stroke-color: rgba(lighten($color-about, 20%), 0.3);
 // Styling the generated CF form.
 .cform.contact-me {
   width: 100%;
-  height: 100%;
+  height: 350px;
 
   .cf-ol {
     margin: 20px 0 0;
@@ -112,7 +112,6 @@ $about-stroke-color: rgba(lighten($color-about, 20%), 0.3);
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         background-color: white(0.7);
-        // border: 1px solid black(0.5);
         border: none;
         @include transition(all 0.1s linear);
         @include border-radius(5px);
@@ -122,7 +121,7 @@ $about-stroke-color: rgba(lighten($color-about, 20%), 0.3);
         outline: none;
       }
       input { margin: 0 0 15px; }
-      textarea { height: 200px; }
+      textarea { height: 180px; }
       input:focus, textarea:focus {
         background-color: rgba(#f3f8f8, 0.9);
         @include box-shadow(inset 0 0 5px black(0.2), 0 1px 0 white(0.7), inset 0 1px 2px black(0.4), 0 0 40px rgba($color-sec, 0.4));
@@ -145,7 +144,10 @@ $about-stroke-color: rgba(lighten($color-about, 20%), 0.3);
         right: 8px;
       }
       &.cf_li_err {
-        label { color: #fff; @include text-shadow(0 1px black(0.4)); }
+        label, .reqtxt, .emailreqtxt {
+          color: #fff;
+          @include text-shadow(0 1px black(0.4));
+        }
         input, textarea { background-color: rgba(red, 0.15); }
       }
     }
@@ -176,19 +178,22 @@ $about-stroke-color: rgba(lighten($color-about, 20%), 0.3);
   height: 30px;
   background-color: black(0.6);
   border: none;
+  cursor: pointer !important;
   &:hover {
+    background-color: black(0.8);
   }
   &:active {
+    background-color: black(0.9);
+    margin: 1px 0 -1px;
   }
 }
-.cf_info.success,
-.cf_info.failure {
-  margin-top: 10px;
+.cf_info.success, .cf_info.waiting, .cf_info.failure, .cf_info.mailerr {
+  margin: 10px 8px;
   padding: 1px;
-  font-size: 12px;
+  font-size: 14px;
 }
-.cf_info.success { color: #666; }
-.cf_info.failure { color: #b69a9a; }
+.cf_info.success { color: #333; }
+.cf_info.failure { color: darken(#b69a9a, 20%); }
 
 .linklove {
   display: none;
