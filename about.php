@@ -13,6 +13,12 @@ get_header();
 <section id="alpha" class="about clearfix">
   <div class="about-photo">
     <img src="<?php echo get_bloginfo("template_directory"); ?>/images/about.jpg" alt="About me"/>
+    <section class="message-me show-message-me">
+      <h2>contact me</h2>
+      <div class="contact-form">
+        <?php insert_cform("Contact me"); ?>
+      </div>
+    </section>
   </div>
 
   <div class="about-text">
@@ -51,3 +57,13 @@ get_header();
 get_footer();
 ?>
 
+<script>
+(function() {
+  $(document).ready(function() {
+    var $messageMe = $(".message-me");
+    $messageMe.find("h2").click(function() {
+      $messageMe.toggleClass("show-message-me");
+    });
+  });
+})();
+</script>

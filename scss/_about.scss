@@ -5,20 +5,47 @@ $about-stroke-color: rgba(lighten($color-about, 20%), 0.3);
 .about {
   margin-top: 50px;
   width: $alpha-width;
-
-  .caption {
-    color: black(0.9);
-    @include text-shadow(0 1px white(0.7));
-    position: absolute;
-    top: 440px;
-    left: 10px;
-  }
 }
 
 .about-photo {
   position: relative;
   width: 300px;
+  height: 480px;
   float: left;
+  overflow: hidden;
+
+  .message-me {
+    position: absolute;
+    top: 445px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: white(0.5);
+    @include transition(top 0.3s ease);
+    &.show-message-me { top: 0; }
+
+    h2 {
+      font-size: 20px;
+      font-family: $font-titles;
+      font-weight: 900;
+      font-variant: small-caps;
+      line-height: 20px;
+      text-align: center;
+      color: black(0.9);
+      @include text-shadow(0 1px white(0.7));
+      cursor: pointer;
+      padding: 5px 0 10px;
+    }
+
+    .contact-form {
+      color: black(0.9);
+      position: relative;
+      height: 425px;
+    }
+  }
 }
 
 .about-text {
@@ -65,4 +92,105 @@ $about-stroke-color: rgba(lighten($color-about, 20%), 0.3);
       padding-bottom: 2px;
     }
   }
+}
+
+// Styling the generated CF form.
+.cform.contact-me {
+  width: 100%;
+  height: 100%;
+
+  .cf-ol {
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      position: relative;
+
+      input,
+      textarea {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        background-color: white(0.7);
+        // border: 1px solid black(0.5);
+        border: none;
+        @include transition(all 0.1s linear);
+        @include border-radius(5px);
+        @include box-shadow(inset 0 0 5px black(0.1), 0 1px 0 white(0.5), inset 0 1px 2px black(0.3), 0 0 40px rgba($color-sec, 0.3));
+        padding: 20px 8px 3px;
+        width: 300px - 20px * 2;
+        outline: none;
+      }
+      input { margin: 0 0 15px; }
+      textarea { height: 200px; }
+      input:focus, textarea:focus {
+        background-color: rgba(#f3f8f8, 0.9);
+        @include box-shadow(inset 0 0 5px black(0.2), 0 1px 0 white(0.7), inset 0 1px 2px black(0.4), 0 0 40px rgba($color-sec, 0.4));
+      }
+      label {
+        position: absolute;
+        top: 5px;
+        left: 8px;
+        color: #333;
+        font-size: 14px;
+        @include text-shadow(0 1px white(0.5));
+      }
+      .reqtxt, .emailreqtxt {
+        color: #886262;
+        font-size: 13px;
+        display: block;
+        text-align: right;
+        position: absolute;
+        top: 6px;
+        right: 8px;
+      }
+      &.cf_li_err {
+        label { color: #fff; @include text-shadow(0 1px black(0.4)); }
+        input, textarea { background-color: rgba(red, 0.15); }
+      }
+    }
+  }
+  .cf_hidden {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.cform .cf-sb {
+  margin: 0 -20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 30px;
+}
+
+.cform input.sendbutton {
+  font-size: 14px;
+  font-family: $font-titles;
+  font-weight: 900;
+  text-transform: uppercase;
+  @include text-shadow(0 1px black(0.3));
+  color: #aaa;
+  width: 100%;
+  height: 30px;
+  background-color: black(0.6);
+  border: none;
+  &:hover {
+  }
+  &:active {
+  }
+}
+.cf_info.success,
+.cf_info.failure {
+  margin-top: 10px;
+  padding: 1px;
+  font-size: 12px;
+}
+.cf_info.success { color: #666; }
+.cf_info.failure { color: #b69a9a; }
+
+.linklove {
+  display: none;
+  visibility: hidden;
 }
