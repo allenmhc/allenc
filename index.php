@@ -10,15 +10,16 @@ global $wp_query;
 
 <div id="alpha">
   <section class="post">
-    <?php
-    while (have_posts()):
-      the_post();
-      echo '<h1>';
-      the_title();
-      echo '</h1>';
-      the_content();
-    endwhile;
-    ?>
+    <?php while (have_posts()): the_post(); ?>
+
+    <h1><?php the_title(); ?></h1>
+    <div class="title-separator"></div>
+
+    <div class="post-content prose">
+      <?php the_content(); ?>
+    </div>
+
+    <?php endwhile; ?>
   </section>
 </div>
 
