@@ -17,6 +17,7 @@ global $wp_query;
 
     <div class="post-content prose">
       <?php the_content(); ?>
+      <aside class="categories">Posted under <?php the_category(', '); ?></aside>
     </div>
 
     <?php endwhile; ?>

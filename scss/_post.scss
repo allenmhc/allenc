@@ -101,6 +101,16 @@
       padding: 0 25px;
     }
 
+    // Categories.
+    .categories {
+      color: $color-sec;
+      text-align: right;
+      a {
+        color: $color-sec;
+        border-bottom-color: rgba($color-sec, 0.4);
+      }
+    }
+
     /*
      * Plugins
      */
@@ -128,6 +138,11 @@
         }
         li { line-height: 20px; }
       }
+    }
+
+    // Social sharing.
+    .mr_social_sharing_wrapper {
+      margin: 2em 0 1em;
     }
   }
 }

@@ -2241,7 +2241,17 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 10px 0 0;
   padding: 0 25px;
 }
+/* line 105, ../scss/_post.scss */
+.post .post-content .categories {
+  color: #c0ad6b;
+  text-align: right;
+}
 /* line 108, ../scss/_post.scss */
+.post .post-content .categories a {
+  color: #c0ad6b;
+  border-bottom-color: rgba(192, 173, 107, 0.4);
+}
+/* line 118, ../scss/_post.scss */
 .post .post-content .syntaxhighlighter {
   border: 1px solid #859fb8;
   padding: 10px 0;
@@ -2249,32 +2259,36 @@ h1, h2, h3, h4, h5, h6 {
   -moz-box-sizing: border-box;
   font-size: 14px !important;
 }
-/* line 117, ../scss/_post.scss */
+/* line 127, ../scss/_post.scss */
 .post .post-content #footnote-list {
   color: #b3b3b3;
   font-size: 14px;
   margin: 30px 0;
 }
-/* line 121, ../scss/_post.scss */
+/* line 131, ../scss/_post.scss */
 .post .post-content #footnote-list ol {
   margin: 0;
   padding: 0;
   list-style-position: inside;
 }
-/* line 125, ../scss/_post.scss */
+/* line 135, ../scss/_post.scss */
 .post .post-content #footnote-list ol a {
   padding-bottom: 1px;
 }
-/* line 127, ../scss/_post.scss */
+/* line 137, ../scss/_post.scss */
 .post .post-content #footnote-list ol a:last-child {
   border-bottom: none;
 }
-/* line 129, ../scss/_post.scss */
+/* line 139, ../scss/_post.scss */
 .post .post-content #footnote-list ol li {
   line-height: 20px;
 }
+/* line 144, ../scss/_post.scss */
+.post .post-content .mr_social_sharing_wrapper {
+  margin: 2em 0 1em;
+}
 
-/* line 136, ../scss/_post.scss */
+/* line 151, ../scss/_post.scss */
 body div#footnotediv {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -2292,14 +2306,14 @@ body div#footnotediv {
   border: none;
   line-height: 20px;
 }
-/* line 146, ../scss/_post.scss */
+/* line 161, ../scss/_post.scss */
 body div#footnotediv a {
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid #b3b3b3;
   color: #e6e6e6;
 }
-/* line 151, ../scss/_post.scss */
+/* line 166, ../scss/_post.scss */
 body div#footnotediv a:last-child {
   border-bottom: none;
 }
