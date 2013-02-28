@@ -1574,14 +1574,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 93, ../scss/_home.scss */
-.archives .posts-list, .search-results .posts-list {
+.archives .posts-list, .search-results .posts-list, .related-posts .posts-list {
   list-style: none;
   margin: 0;
   padding: 20px 0;
   position: relative;
 }
 /* line 99, ../scss/_home.scss */
-.archives .posts-list:before, .search-results .posts-list:before {
+.archives .posts-list:before, .search-results .posts-list:before, .related-posts .posts-list:before {
   position: absolute;
   top: -10%;
   left: 90px;
@@ -1596,29 +1596,29 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
 }
 /* line 111, ../scss/_home.scss */
-.archives a.post-line, .search-results a.post-line {
+.archives a.post-line, .search-results a.post-line, .related-posts a.post-line {
   padding: 10px 0 15px;
   text-decoration: none;
   display: block;
   position: relative;
 }
 /* line 117, ../scss/_home.scss */
-.archives a.post-line:hover:before, .search-results a.post-line:hover:before {
+.archives a.post-line:hover:before, .search-results a.post-line:hover:before, .related-posts a.post-line:hover:before {
   content: "";
 }
 /* line 121, ../scss/_home.scss */
-.archives a.post-line:active, .search-results a.post-line:active {
+.archives a.post-line:active, .search-results a.post-line:active, .related-posts a.post-line:active {
   margin-top: 1px;
   margin-bottom: -1px;
 }
 /* line 124, ../scss/_home.scss */
-.archives a.post-line:active:before, .search-results a.post-line:active:before {
+.archives a.post-line:active:before, .search-results a.post-line:active:before, .related-posts a.post-line:active:before {
   -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   -moz-box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 /* line 128, ../scss/_home.scss */
-.archives a.post-line:before, .search-results a.post-line:before {
+.archives a.post-line:before, .search-results a.post-line:before, .related-posts a.post-line:before {
   content: none;
   position: absolute;
   top: 15px;
@@ -1633,7 +1633,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #282f38;
 }
 /* line 140, ../scss/_home.scss */
-.archives .archive-date, .search-results .archive-date {
+.archives .archive-date, .search-results .archive-date, .related-posts .archive-date {
   font-size: 12px;
   font-family: Inconsolata, "Andale Mono", "Courier New", "Courier", monospace;
   display: inline-block;
@@ -1645,7 +1645,7 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 /* line 152, ../scss/_home.scss */
-.archives .post-title, .search-results .post-title {
+.archives .post-title, .search-results .post-title, .related-posts .post-title {
   width: 400px;
   letter-spacing: 1px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
@@ -2243,15 +2243,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 105, ../scss/_post.scss */
 .post .post-content .categories {
-  color: #c0ad6b;
   text-align: right;
 }
-/* line 108, ../scss/_post.scss */
+/* line 107, ../scss/_post.scss */
 .post .post-content .categories a {
   color: #c0ad6b;
   border-bottom-color: rgba(192, 173, 107, 0.4);
 }
-/* line 118, ../scss/_post.scss */
+/* line 117, ../scss/_post.scss */
 .post .post-content .syntaxhighlighter {
   border: 1px solid #859fb8;
   padding: 10px 0;
@@ -2259,20 +2258,21 @@ h1, h2, h3, h4, h5, h6 {
   -moz-box-sizing: border-box;
   font-size: 14px !important;
 }
-/* line 127, ../scss/_post.scss */
+/* line 126, ../scss/_post.scss */
 .post .post-content #footnote-list {
   color: #b3b3b3;
   font-size: 14px;
   margin: 30px 0;
 }
-/* line 131, ../scss/_post.scss */
+/* line 130, ../scss/_post.scss */
 .post .post-content #footnote-list ol {
   margin: 0;
   padding: 0;
   list-style-position: inside;
 }
-/* line 135, ../scss/_post.scss */
+/* line 134, ../scss/_post.scss */
 .post .post-content #footnote-list ol a {
+  color: #b3b3b3;
   padding-bottom: 1px;
 }
 /* line 137, ../scss/_post.scss */
@@ -2309,7 +2309,37 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
 }
 
-/* line 168, ../scss/_post.scss */
+/* line 167, ../scss/_post.scss */
+.related-posts {
+  margin-top: 20px;
+}
+/* line 170, ../scss/_post.scss */
+.related-posts h3 {
+  font-weight: 400;
+  color: #addecc;
+  font-size: 16px;
+}
+/* line 176, ../scss/_post.scss */
+.related-posts .posts-list {
+  padding: 10px 0;
+}
+/* line 178, ../scss/_post.scss */
+.related-posts .posts-list a.post-line {
+  padding: 2px 0 2px 20px;
+}
+/* line 180, ../scss/_post.scss */
+.related-posts .posts-list a.post-line:before {
+  top: 10px;
+  left: -4px;
+}
+/* line 186, ../scss/_post.scss */
+.related-posts .posts-list:before {
+  height: 90%;
+  top: 5%;
+  left: 0;
+}
+
+/* line 195, ../scss/_post.scss */
 body div#footnotediv {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -2327,14 +2357,14 @@ body div#footnotediv {
   border: none;
   line-height: 20px;
 }
-/* line 178, ../scss/_post.scss */
+/* line 205, ../scss/_post.scss */
 body div#footnotediv a {
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid #b3b3b3;
   color: #e6e6e6;
 }
-/* line 183, ../scss/_post.scss */
+/* line 210, ../scss/_post.scss */
 body div#footnotediv a:last-child {
   border-bottom: none;
 }

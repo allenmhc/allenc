@@ -20,6 +20,8 @@ global $wp_query;
       <aside class="categories">Posted under <?php the_category(', '); ?></aside>
     </div>
 
+    <div class="related-posts"><?php related_posts(); ?></div>
+
     <div class="comments" name="comments" id="comments">
       <?php comments_template(); ?>
     </div>
