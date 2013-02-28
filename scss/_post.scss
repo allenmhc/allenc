@@ -145,6 +145,23 @@
       margin: 2em 0 1em;
     }
   }
+
+  .comments {
+    margin-top: 50px;
+    padding-top: 40px;
+    position: relative;
+
+    &:before {
+      width: 100%;
+      height: 1px;
+      @include background(linear-gradient(left, white(0.6) 0%, white(0.4) 60%, white(0.0) 100%));
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
 }
 
 // jQuery Footnotes hover.
