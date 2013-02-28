@@ -100,5 +100,54 @@
       margin: 0 10px 0 0;
       padding: 0 25px;
     }
+
+    /*
+     * Plugins
+     */
+    // Syntax Highlighter.
+    .syntaxhighlighter {
+      border: 1px solid $color-prim;
+      padding: 10px 0;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      font-size: 14px !important;
+    }
+
+    // jQuery Footnotes.
+    #footnote-list {
+      color: darken(white, 30%);
+      font-size: 14px;
+      margin: 30px 0;
+      ol {
+        margin: 0;
+        padding: 0;
+        list-style-position: inside;
+        a {
+          padding-bottom: 1px;
+          &:last-child { border-bottom: none; }
+        }
+        li { line-height: 20px; }
+      }
+    }
+  }
+}
+
+// jQuery Footnotes hover.
+body div#footnotediv {
+  @include border-radius(5px);
+  @include box-shadow(0px 1px 5px white(0.6));
+  font-size: 14px;
+  background-color: #222;
+  color: darken(white, 10%);
+  max-width: 250px;
+  padding: 10px 15px;
+  border: none;
+  line-height: 20px;
+  a {
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid darken(white, 30%);
+    color: darken(white, 10%);
+    &:last-child { border-bottom: none; }
   }
 }
