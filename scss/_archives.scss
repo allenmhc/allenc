@@ -82,3 +82,13 @@ $gradient-color: rgba(lighten($color-archives, 20%), 0.3);
     }
   }
 }
+
+// Category archive page.
+.archive {
+  margin-top: 25px;
+
+  .posts-list:before {
+    height: 100%;
+    top: 0;
+  }
+}
