@@ -473,22 +473,26 @@ body {
 }
 /* line 21, ../scss/_base.scss */
 body .prose a {
-  color: #eee;
+  color: #859fb8;
   text-decoration: none;
   padding-bottom: 2px;
-  border-bottom: 1px solid #888888;
+}
+/* line 25, ../scss/_base.scss */
+body .prose a:hover, body .prose a:active {
+  color: #a5b8cb;
 }
 /* line 26, ../scss/_base.scss */
-body .prose a:hover, body .prose a:active {
-  border-bottom-color: #bbbbbb;
-}
-/* line 27, ../scss/_base.scss */
 body .prose a:active {
   position: relative;
   top: 1px;
 }
 
 /* line 31, ../scss/_base.scss */
+a {
+  color: #859fb8;
+}
+
+/* line 35, ../scss/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;

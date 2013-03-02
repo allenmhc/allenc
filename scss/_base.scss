@@ -19,13 +19,17 @@ body {
   background: black(1) url(../images/bg-waves.jpg) no-repeat fixed center center;
 
   .prose a {
-    color: #eee;
+    color: $color-prim;
     text-decoration: none;
     padding-bottom: 2px;
-    border-bottom: 1px solid darken(#eee, 40%);
-    &:hover, &:active { border-bottom-color: darken(#eee, 20%); }
+    &:hover, &:active { color: lighten($color-prim, 10%); }
     &:active { position: relative; top: 1px; }
   }
+}
+
+// More for Disqus to pick up.
+a {
+  color: $color-prim;
 }
 
 h1, h2, h3, h4, h5, h6 {
