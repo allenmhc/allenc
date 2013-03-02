@@ -22,7 +22,8 @@ get_header();
 </section>
 
 <?php
-  get_footer();
+  wp_footer();
 ?>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="<?php echo get_bloginfo('template_directory'); ?>/scripts/lines.js"></script>
