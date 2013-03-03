@@ -17,7 +17,14 @@ global $wp_query;
 
     <div class="post-content prose">
       <?php the_content(); ?>
-      <aside class="categories">Posted under <?php the_category(', '); ?></aside>
+      <aside class="metadata">
+        Posted on
+        <?php $time = strtotime(get_the_date()); ?>
+        <time datetime="<?php echo date("Y-m-d", $time); ?>" class="post-date">
+          <?php echo date("Y.m.d", strtotime(get_the_date())); ?>
+        </time>
+        under <?php the_category(', '); ?>
+      </aside>
     </div>
 
     <div class="related-posts"><?php related_posts(); ?></div>

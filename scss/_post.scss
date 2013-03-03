@@ -100,12 +100,15 @@
       padding: 0 25px;
     }
 
-    // Categories.
-    .categories {
+    // Metadata.
+    .metadata {
       text-align: right;
+      .post-date {
+        color: rgba($color-sec, 0.8);
+      }
       a {
         color: $color-sec;
-        border-bottom-color: rgba($color-sec, 0.4);
+        border-bottom: 1px solid rgba($color-sec, 0.4);
       }
     }
 
