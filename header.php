@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/styles/zocial.css" type="text/css" media="screen" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS" href="<?php bloginfo('rss2_url'); ?>" />
+  <link rel="icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.png" />
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
   <script>window.Modernizr || document.write('<script src="scripts/lib/modernizr-2.6.2.min.js">\x3C/script>')</script>
@@ -27,27 +28,6 @@
   <?php wp_head(); ?>
 </head>
 <body>
-  <!-- Gridder config - remove on styling completion -->
-  <script type="text/javascript">
-  var gOverride = {
-    urlBase: 'http://gridder.andreehansson.se/releases/latest/',
-    gColor: '#EEEEEE',
-    gColumns: 16,
-    gOpacity: 0.35,
-    gWidth: 10,
-    pColor: '#C0C0C0',
-    pHeight: 15,
-    pOffset: 0,
-    pOpacity: 0.55,
-    center: true,
-    gEnabled: true,
-    pEnabled: true,
-    setupEnabled: true,
-    fixFlash: true,
-    size: 960
-  };
-  </script>
-
   <header id="site-header">
     <div class="centered-section">
       <a id="site-title-link" href="<?php echo get_home_url(); ?>">
