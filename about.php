@@ -44,7 +44,7 @@ get_header();
       <dd>product &times; design &times; code</dd>
 
       <dt>how</dt>
-      <dd><a href="#">credits</a></dd>
+      <dd><a href="http://allenc.com/2013/03/blog-redesign-and-resources-code/">code</a> and <a href="http://allenc.com/2013/03/blog-redesign-and-resources-design/">design</a></dd>
     </dl>
   </div>
 </section>
