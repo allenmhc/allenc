@@ -454,16 +454,49 @@ table {
 
 @font-face {
   font-family: "Proxima Nova";
-  src: url("../fonts/proximanova-regular.eot");
+  src: url("../fonts/proximanova-regular-webfont.eot");
   src: local("â˜º");
-  src: url("../fonts/proximanova-regular.woff") format("woff");
-  src: url("../fonts/proximanova-regular.ttf") format("truetype");
-  src: url("../fonts/proximanova-regular.svg") format("svg");
+  src: url("../fonts/proximanova-regular-webfont.woff") format("woff");
+  src: url("../fonts/proximanova-regular-webfont.ttf") format("truetype");
+  src: url("../fonts/proximanova-regular-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 14, ../scss/_base.scss */
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/proximanova-bold-webfont.eot");
+  src: local("â˜º");
+  src: url("../fonts/proximanova-bold-webfont.woff") format("woff");
+  src: url("../fonts/proximanova-bold-webfont.ttf") format("truetype");
+  src: url("../fonts/proximanova-bold-webfont.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/proximanova-regularitalic-webfont.eot");
+  src: local("â˜º");
+  src: url("../fonts/proximanova-regularitalic-webfont.woff") format("woff");
+  src: url("../fonts/proximanova-regularitalic-webfont.ttf") format("truetype");
+  src: url("../fonts/proximanova-regularitalic-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/proximanova-boldit-webfont.eot");
+  src: local("â˜º");
+  src: url("../fonts/proximanova-boldit-webfont.woff") format("woff");
+  src: url("../fonts/proximanova-boldit-webfont.ttf") format("truetype");
+  src: url("../fonts/proximanova-boldit-webfont.svg") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* line 44, ../scss/_base.scss */
 body {
   font-size: 16px;
   font-weight: normal;
@@ -471,28 +504,28 @@ body {
   color: #eee;
   background: black url(../images/bg-waves.jpg) no-repeat fixed center center;
 }
-/* line 21, ../scss/_base.scss */
+/* line 51, ../scss/_base.scss */
 body .prose a {
   color: #859fb8;
   text-decoration: none;
   padding-bottom: 2px;
 }
-/* line 25, ../scss/_base.scss */
+/* line 55, ../scss/_base.scss */
 body .prose a:hover, body .prose a:active {
   color: #a5b8cb;
 }
-/* line 26, ../scss/_base.scss */
+/* line 56, ../scss/_base.scss */
 body .prose a:active {
   position: relative;
   top: 1px;
 }
 
-/* line 31, ../scss/_base.scss */
+/* line 61, ../scss/_base.scss */
 a {
   color: #859fb8;
 }
 
-/* line 35, ../scss/_base.scss */
+/* line 65, ../scss/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
