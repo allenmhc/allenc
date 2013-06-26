@@ -5,8 +5,9 @@
     define('TWITTER_CONSUMER_SECRET', 'BxrM1xp64oi7Y4ecrm6zNkpYlV0TCkSUenNcP93n3Q');
 
     require_once('codebird.php');
-    \Codebird\Codebird::setConsumerKey(TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET);
-    $cb = \Codebird\Codebird::getInstance();
+    use Codebird\Codebird as Codebird;
+    Codebird::setConsumerKey(TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET);
+    $cb = Codebird::getInstance();
   ?>
 
   <footer id="site-footer">
