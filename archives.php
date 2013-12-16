@@ -20,7 +20,7 @@ function filter_by_year($where = '') {
   global $wpdb, $archives_year;
   $last_year = intval($archives_year) - 2;
   $next_year = intval($archives_year) + 1;
-  $where .= $wpdb->prepare(" AND post_date >= '$last_year-01-01' AND post_date <= '$next_year-12-31'");
+  $where .= $wpdb->prepare(" AND post_date >= '%d-01-01' AND post_date <= '%d-12-31'", $last_year, $next_year);
   return $where;
 }
 
